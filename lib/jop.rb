@@ -6,7 +6,9 @@ class Jop
   end
 
   def eval_on ary
-    ary
+    return ary if @command_text.empty?
+    return ary.reduce(:+) if @command_text == "+/"
+    []
   end
 end
 
