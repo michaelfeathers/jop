@@ -7,10 +7,14 @@ class Jop
 
   def eval_on ary
     case @command_text
-    when "+/"
+    when '+/'
       ary.reduce(:+)
-    when "*/"
+    when '*/'
       ary.reduce(:*)
+    when "/:~"
+      ary.sort
+    when '\:~'
+      ary.sort.reverse
     else
       []
     end
