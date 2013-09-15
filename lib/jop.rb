@@ -6,6 +6,9 @@ class Jop
   end
 
   def eval_on ary
+    return [] if @command_text.size == 0
+    elements = []
+    times = 0
     case @command_text
     when '+/'
       ary.reduce(:+)
@@ -18,7 +21,9 @@ class Jop
     when '|.'
       ary.reverse
     else
-      []
+      elements = @command_text.split
+      times = elements[0].to_i
+      ary.take(times)
     end
   end
 end

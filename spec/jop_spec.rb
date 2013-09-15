@@ -26,4 +26,16 @@ describe Jop do
   it "can reverse" do
     [1, 0, 2].j('|.').should eq([2,0,1])
   end
+
+  it "can take two elements" do
+    [1,2,3].j('2 {.').should eq([1,2])
+  end
+
+  it "can take one elements" do
+    [1,2,3,4].j('1 {.').should eq([1])
+  end
+
+  it "can take an arbitrary number of elements" do
+    [1,2,3,4].j('3 {.').should eq([1,2, 3])
+  end
 end
