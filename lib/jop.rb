@@ -19,6 +19,8 @@ class Jop
     elements = []
     times = 0
     case @command_text
+    when '#'
+      ary.count
     when '+/'
       ary.reduce(:+)
     when '*/'

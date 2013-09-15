@@ -59,5 +59,9 @@ describe Jop do
     [1,2,3].j('>:').should eq([2,3,4])
   end
 
+  it "can size arrays" do
+    [1,2].j('#').should eq(2)
+  end
+
 
 end
