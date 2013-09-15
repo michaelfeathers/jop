@@ -15,6 +15,8 @@ class Jop
       ary.sort
     when '\:~'
       ary.sort.reverse
+    when '|.'
+      ary.reverse
     else
       []
     end

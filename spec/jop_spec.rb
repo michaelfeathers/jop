@@ -22,4 +22,8 @@ describe Jop do
   it "can sort descending" do
     [1, 0, 2].j('\:~').should eq([2,1,0])
   end
+
+  it "can reverse" do
+    [1, 0, 2].j('|.').should eq([2,0,1])
+  end
 end
