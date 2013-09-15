@@ -22,6 +22,15 @@ class Jop
     grade_up(ary).reverse
   end
 
+  def number_prefix_command command_ary, ary
+    number = to_numeric(command_ary[0])
+    case command_ary[1]
+    when "{."
+      return ary.take(number) if number >= 0
+      return ary.reverse.take(-number).reverse
+    end
+  end
+
   def eval_on ary
     return [] if @command_text.size == 0
     case @command_text
@@ -51,11 +60,7 @@ class Jop
       ary.map {|e| 1 - e }
     else
       elements = @command_text.split
-      if numeric_literal?(elements[0])
-        times = to_numeric(elements[0])
-        return ary.take(times) if times >= 0
-        return ary.reverse.take(-times).reverse
-      end
+      return number_prefix_command(elements, ary) if numeric_literal?(elements[0])
       []
     end
   end
