@@ -14,6 +14,14 @@ class Jop
      return -(text[1..text.length-1]).to_i
   end
 
+  def grade_up ary
+    ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }
+  end
+
+  def grade_down ary
+    grade_up(ary).reverse
+  end
+
   def eval_on ary
     return [] if @command_text.size == 0
     case @command_text
@@ -30,8 +38,9 @@ class Jop
     when '|.'
       ary.reverse
     when '/:'
-      ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }
+      grade_up(ary)
     when '\:'
+      grade_down(ary)
       ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }.reverse
     when '<:'
       ary.map {|e| e - 1 }
