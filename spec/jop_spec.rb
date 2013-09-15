@@ -51,5 +51,9 @@ describe Jop do
     [3,5,4].j('\:').should eq([1,2,0])
   end
 
+  it "can decrement" do
+    [1,2,3].j('<:').should eq([0,1,2])
+  end
+
 
 end

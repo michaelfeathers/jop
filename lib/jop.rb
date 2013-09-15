@@ -33,6 +33,8 @@ class Jop
       ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }
     when '\:'
       ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }.reverse
+    when '<:'
+      ary.map {|e| e - 1 }
     else
       elements = @command_text.split
       if numeric_literal?(elements[0])
