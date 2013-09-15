@@ -6,7 +6,7 @@ class Jop
   end
 
   def numeric_literal? text
-    text =~ /_?\d+/
+    text =~ /^_?\d+/
   end
 
   def to_numeric text
@@ -41,7 +41,6 @@ class Jop
       grade_up(ary)
     when '\:'
       grade_down(ary)
-      ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }.reverse
     when '<:'
       ary.map {|e| e - 1 }
     when '>:'
