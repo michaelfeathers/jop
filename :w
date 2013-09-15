@@ -42,7 +42,6 @@ describe Jop do
   it "can take negative elements" do
     [1,2,3].j('_2 {.').should eq([2,3])
   end
-
   it "can grade up" do
     [3,5,4].j('/:').should eq([0,2,1])
   end

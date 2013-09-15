@@ -26,8 +26,10 @@ class Jop
       ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }.reverse
     else
       elements = @command_text.split
-      times = elements[0].to_i
-      ary.take(times)
+      times_string = elements[0]
+      times = times_string[0] == '_' ? -times_string[1..(times_string.length-1)].to_i : times_string.to_i
+      return ary.take(times) if times >= 0
+      ary.reverse.take(-times).reverse
     end
   end
 end
