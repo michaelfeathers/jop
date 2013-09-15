@@ -55,5 +55,9 @@ describe Jop do
     [1,2,3].j('<:').should eq([0,1,2])
   end
 
+  it "can increment" do
+    [1,2,3].j('>:').should eq([2,3,4])
+  end
+
 
 end
