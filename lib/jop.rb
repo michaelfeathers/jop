@@ -8,6 +8,7 @@ class Jop
   def eval_on ary
     return ary if @command_text.empty?
     return ary.reduce(:+) if @command_text == "+/"
+    return ary.reduce(:*) if @command_text == "*/"
     []
   end
 end
