@@ -16,8 +16,6 @@ class Jop
 
   def eval_on ary
     return [] if @command_text.size == 0
-    elements = []
-    times = 0
     case @command_text
     when '#'
       ary.count
