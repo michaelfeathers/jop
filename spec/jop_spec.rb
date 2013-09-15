@@ -38,4 +38,10 @@ describe Jop do
   it "can take an arbitrary number of elements" do
     [1,2,3,4].j('3 {.').should eq([1,2, 3])
   end
+
+  # do negative number of elements on take
+  it "can grade up" do
+    [3,5,4].j('/:').should eq([0,2,1])
+  end
+
 end
