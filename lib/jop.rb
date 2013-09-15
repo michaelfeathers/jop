@@ -11,11 +11,11 @@ class Jop
 
   def to_numeric text
      return text.to_i if text =~ /^\d+/
-     return -(text[1..text.length-1]).to_i
+     -(text[1...text.length]).to_i
   end
 
   def grade_up ary
-    ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }
+    ary.zip(0..ary.count).sort_by {|e| e[0] }.map {|e| e[1] }
   end
 
   def grade_down ary
