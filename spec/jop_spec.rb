@@ -40,8 +40,14 @@ describe Jop do
   end
 
   # do negative number of elements on take
+  #
   it "can grade up" do
     [3,5,4].j('/:').should eq([0,2,1])
   end
+
+  it "can grade down" do
+    [3,5,4].j('\:').should eq([1,2,0])
+  end
+
 
 end

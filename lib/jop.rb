@@ -22,6 +22,8 @@ class Jop
       ary.reverse
     when '/:'
       ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }
+    when '\:'
+      ary.zip(0..(ary.count)).sort_by {|e| e[0] }.map {|e| e[1] }.reverse
     else
       elements = @command_text.split
       times = elements[0].to_i
