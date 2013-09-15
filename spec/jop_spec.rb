@@ -63,5 +63,15 @@ describe Jop do
     [1,2].j('#').should eq(2)
   end
 
+  it "can do reciprocal" do
+    [1,2].j('%').should eq([1, 0.5])
+  end
 
+  it "can do reciprocal with zeros" do
+    [0].j('%').should eq([Float::INFINITY])
+  end
+
+  it "can do complement" do
+    [0.3, 0.2].j('-.').should eq([0.7, 0.8])
+  end
 end

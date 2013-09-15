@@ -45,6 +45,10 @@ class Jop
       ary.map {|e| e - 1 }
     when '>:'
       ary.map {|e| e + 1 }
+    when '%'
+      ary.map {|e| 1 / e.to_f }
+    when '-.'
+      ary.map {|e| 1 - e }
     else
       elements = @command_text.split
       if numeric_literal?(elements[0])
