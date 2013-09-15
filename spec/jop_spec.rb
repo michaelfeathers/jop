@@ -43,6 +43,14 @@ describe Jop do
     [1,2,3].j('_2 {.').should eq([2,3])
   end
 
+  it "can drop two elements" do
+    [1,2,3].j('2 }.').should eq([3])
+  end
+
+  it "can drop negative elements" do
+    [1,2,3].j('_2 }.').should eq([1])
+  end
+
   it "can grade up" do
     [3,5,4].j('/:').should eq([0,2,1])
   end

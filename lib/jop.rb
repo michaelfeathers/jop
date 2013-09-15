@@ -25,10 +25,14 @@ class Jop
   def number_prefix_command command_ary, ary
     number = to_numeric(command_ary[0])
     case command_ary[1]
-    when "{."
+    when '{.'
       return ary.take(number) if number >= 0
       return ary.reverse.take(-number).reverse
+    when '}.'
+      return ary.drop(number) if number >= 0
+      return ary.reverse.drop(-number).reverse
     end
+    []
   end
 
   def eval_on ary
