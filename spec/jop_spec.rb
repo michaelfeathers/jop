@@ -12,19 +12,19 @@ describe Jop do
   end
 
   it "can multiply" do
-    [2, 4, 6].j('*/').should eq(48)
+    [2,4,6].j('*/').should eq(48)
   end
 
   it "can sort ascending" do
-    [1, 0, 2].j('/:~').should eq([0,1,2])
+    [1,0,2].j('/:~').should eq([0,1,2])
   end
 
   it "can sort descending" do
-    [1, 0, 2].j('\:~').should eq([2,1,0])
+    [1,0,2].j('\:~').should eq([2,1,0])
   end
 
   it "can reverse" do
-    [1, 0, 2].j('|.').should eq([2,0,1])
+    [1,0,2].j('|.').should eq([2,0,1])
   end
 
   it "can take two elements" do
@@ -36,7 +36,7 @@ describe Jop do
   end
 
   it "can take an arbitrary number of elements" do
-    [1,2,3,4].j('3 {.').should eq([1,2, 3])
+    [1,2,3,4].j('3 {.').should eq([1,2,3])
   end
 
   it "can take negative elements" do
@@ -72,7 +72,7 @@ describe Jop do
   end
 
   it "can do reciprocal" do
-    [1,2].j('%').should eq([1, 0.5])
+    [1,2].j('%').should eq([1,0.5])
   end
 
   it "can do reciprocal with zeros" do
@@ -80,11 +80,11 @@ describe Jop do
   end
 
   it "can do complement" do
-    [0.3, 0.2].j('-.').should eq([0.7, 0.8])
+    [0.3,0.2].j('-.').should eq([0.7,0.8])
   end
 
   it "can rotate right" do
-    [0,1,2].j('1 |.').should eq([1, 2, 0])
+    [0,1,2].j('1 |.').should eq([1,2,0])
   end
 
   it "can rotate right an even number of times" do

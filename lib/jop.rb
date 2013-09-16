@@ -15,7 +15,7 @@ class Jop
   end
 
   def grade_up ary
-    ary.zip(0...ary.count).sort_by {|e| e[0] }.map {|e| e[1] }
+    ary.zip(0...ary.length).sort_by {|e| e[0] }.map {|e| e[1] }
   end
 
   def grade_down ary
