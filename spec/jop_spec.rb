@@ -123,4 +123,10 @@ describe Jop do
     [0,1,2].j('{.').should eq(0)
   end
 
+  it "can do tail operation" do
+    [0,1,2].j('{:').should eq(2)
+  end
+
+  it "handles empty case on head"
+
 end
