@@ -115,4 +115,8 @@ describe Jop do
     [0,1,2].j('-:').should eq([0,0.5,1.0])
   end
 
+  it "can do a running sum" do
+    [0,1,2].j('+/\\').should eq([0,1,3])
+  end
+
 end

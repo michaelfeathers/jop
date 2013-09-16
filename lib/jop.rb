@@ -70,6 +70,9 @@ class Jop
       ary.map {|e| e * 2 }
     when '-:'
       ary.map {|e| e / 2.0 }
+    when '+/\\'
+      sum = 0
+      return ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
     else
       elements = @command_text.split
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])
