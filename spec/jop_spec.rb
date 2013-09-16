@@ -83,11 +83,11 @@ describe Jop do
     [0.3, 0.2].j('-.').should eq([0.7, 0.8])
   end
 
-  it "can rotate" do
+  it "can rotate right" do
     [0,1,2].j('1 |.').should eq([1, 2, 0])
   end
 
-  it "can rotate an even number of times" do
+  it "can rotate right an even number of times" do
     [0,1,2].j('12 |.').should eq([0,1,2])
   end
 
@@ -95,7 +95,7 @@ describe Jop do
     [0,1,2].j('13 |.').should eq([1,2,0])
   end
 
-  it "can rotate negative"
+  it "can rotate left"
 
 
 
