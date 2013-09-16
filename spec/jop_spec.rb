@@ -91,12 +91,21 @@ describe Jop do
     [0,1,2].j('12 |.').should eq([0,1,2])
   end
 
-  it "can rotate an odd number of times" do
+  it "can rotate right an odd number of times" do
     [0,1,2].j('13 |.').should eq([1,2,0])
   end
 
-  it "can rotate left"
+  it "can rotate left" do
+    [0,1,2].j('_1 |.').should eq([2,0,1])
+  end
 
+  it "can rotate left an even number of times" do
+    [0,1,2].j('_12 |.').should eq([0,1,2])
+  end
+
+  it "can rotate left an odd number of times" do
+    [0,1,2].j('13 |.').should eq([1,2,0])
+  end
 
 
 end
