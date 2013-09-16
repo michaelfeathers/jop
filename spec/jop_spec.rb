@@ -87,8 +87,14 @@ describe Jop do
     [0,1,2].j('1 |.').should eq([1, 2, 0])
   end
 
-  it "can rotate an even number of times"
-  it "can rotate an odd number of times"
+  it "can rotate an even number of times" do
+    [0,1,2].j('12 |.').should eq([0,1,2])
+  end
+
+  it "can rotate an odd number of times" do
+    [0,1,2].j('13 |.').should eq([1,2,0])
+  end
+
   it "can rotate negative"
 
 
