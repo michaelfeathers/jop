@@ -104,8 +104,11 @@ describe Jop do
   end
 
   it "can rotate left an odd number of times" do
-    [0,1,2].j('13 |.').should eq([1,2,0])
+    [0,1,2].j('_13 |.').should eq([2,0,1])
   end
 
+  it "can double" do
+    [0,1,2].j('+:').should eq([0,2,4])
+  end
 
 end
