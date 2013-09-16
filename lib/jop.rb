@@ -68,6 +68,8 @@ class Jop
       ary.map {|e| 1 - e }
     when '+:'
       ary.map {|e| e * 2 }
+    when '-:'
+      ary.map {|e| e / 2.0 }
     else
       elements = @command_text.split
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])

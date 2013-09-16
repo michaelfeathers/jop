@@ -111,4 +111,8 @@ describe Jop do
     [0,1,2].j('+:').should eq([0,2,4])
   end
 
+  it "can halve" do
+    [0,1,2].j('-:').should eq([0,0.5,1.0])
+  end
+
 end
