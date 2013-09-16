@@ -73,6 +73,8 @@ class Jop
     when '+/\\'
       sum = 0
       return ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
+    when '{.'
+      ary.take(1).first
     else
       elements = @command_text.split
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])

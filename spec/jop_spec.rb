@@ -119,4 +119,8 @@ describe Jop do
     [0,1,2].j('+/\\').should eq([0,1,3])
   end
 
+  it "can do a head operation" do
+    [0,1,2].j('{.').should eq(0)
+  end
+
 end
