@@ -82,4 +82,9 @@ describe Jop do
   it "can do complement" do
     [0.3, 0.2].j('-.').should eq([0.7, 0.8])
   end
+
+  it "can rotate" do
+    [0,1,2].j('1 |.').should eq([1, 2, 0])
+  end
+
 end

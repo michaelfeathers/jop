@@ -31,6 +31,9 @@ class Jop
     when '}.'
       return ary.drop(number) if number >= 0
       return ary.reverse.drop(-number).reverse
+    when '|.'
+      segment = ary.take(number)
+      return ary.drop(number) + segment
     end
     []
   end
