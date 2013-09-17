@@ -85,6 +85,8 @@ class Jop
       ary.map {|e| e <=> 0 }
     when '^'
       ary.map {|n| Math::exp(n) }
+    when '*:'
+      ary.map {|e| e ** 2 }
     else
       elements = @command_text.split
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])
@@ -98,3 +100,8 @@ class Array
     Jop.new(command_text).eval_on(self)
   end
 end
+
+
+
+
+
