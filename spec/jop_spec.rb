@@ -7,136 +7,136 @@ describe Jop do
     [].j('').should eq([])
   end
 
-  it "can add" do
+  it "sums" do
     [3,2,1].j('+/').should eq(6)
   end
 
-  it "can multiply" do
+  it "multiplies" do
     [2,4,6].j('*/').should eq(48)
   end
 
-  it "can sort ascending" do
+  it "sorts ascending" do
     [1,0,2].j('/:~').should eq([0,1,2])
   end
 
-  it "can sort descending" do
+  it "sort descending" do
     [1,0,2].j('\:~').should eq([2,1,0])
   end
 
-  it "can reverse" do
+  it "reverses" do
     [1,0,2].j('|.').should eq([2,0,1])
   end
 
-  it "can take two elements" do
+  it "takes two elements" do
     [1,2,3].j('2 {.').should eq([1,2])
   end
 
-  it "can take one element" do
+  it "takes one element" do
     [1,2,3,4].j('1 {.').should eq([1])
   end
 
-  it "can take an arbitrary number of elements" do
+  it "takes three elements" do
     [1,2,3,4].j('3 {.').should eq([1,2,3])
   end
 
-  it "can take negative elements" do
+  it "takes negative elements" do
     [1,2,3].j('_2 {.').should eq([2,3])
   end
 
-  it "can drop two elements" do
+  it "drops two elements" do
     [1,2,3].j('2 }.').should eq([3])
   end
 
-  it "can drop negative elements" do
+  it "drops negative elements" do
     [1,2,3].j('_2 }.').should eq([1])
   end
 
-  it "can grade up" do
+  it "grades up" do
     [3,5,4].j('/:').should eq([0,2,1])
   end
 
-  it "can grade down" do
+  it "grades down" do
     [3,5,4].j('\:').should eq([1,2,0])
   end
 
-  it "can decrement" do
+  it "decrements" do
     [1,2,3].j('<:').should eq([0,1,2])
   end
 
-  it "can increment" do
+  it "increments" do
     [1,2,3].j('>:').should eq([2,3,4])
   end
 
-  it "can size arrays" do
+  it "sizes arrays" do
     [1,2].j('#').should eq(2)
   end
 
-  it "can do reciprocal" do
+  it "calcultes the reciprocal" do
     [1,2].j('%').should eq([1,0.5])
   end
 
-  it "can do reciprocal with zeros" do
+  it "calculates the reciprocal with zeros" do
     [0].j('%').should eq([Float::INFINITY])
   end
 
-  it "can do complement" do
+  it "does complements" do
     [0.3,0.2].j('-.').should eq([0.7,0.8])
   end
 
-  it "can rotate right" do
+  it "rotates right" do
     [0,1,2].j('1 |.').should eq([1,2,0])
   end
 
-  it "can rotate right an even number of times" do
+  it "rotates right an even number of times" do
     [0,1,2].j('12 |.').should eq([0,1,2])
   end
 
-  it "can rotate right an odd number of times" do
+  it "rotates right an odd number of times" do
     [0,1,2].j('13 |.').should eq([1,2,0])
   end
 
-  it "can rotate left" do
+  it "rotates left" do
     [0,1,2].j('_1 |.').should eq([2,0,1])
   end
 
-  it "can rotate left an even number of times" do
+  it "rotates left an even number of times" do
     [0,1,2].j('_12 |.').should eq([0,1,2])
   end
 
-  it "can rotate left an odd number of times" do
+  it "rotates left an odd number of times" do
     [0,1,2].j('_13 |.').should eq([2,0,1])
   end
 
-  it "can double" do
+  it "doubles" do
     [0,1,2].j('+:').should eq([0,2,4])
   end
 
-  it "can halve" do
+  it "halves" do
     [0,1,2].j('-:').should eq([0,0.5,1.0])
   end
 
-  it "can do a running sum" do
+  it "does running sums" do
     [0,1,2].j('+/\\').should eq([0,1,3])
   end
 
-  it "can do a head operation" do
+  it "heads" do
     [0,1,2].j('{.').should eq(0)
   end
 
-  it "can do tail operation" do
+  it "tails" do
     [0,1,2].j('{:').should eq(2)
   end
 
-  it "can do a behead operation" do
+  it "beheads" do
     [0,1,2].j('}.').should eq([1,2])
   end
 
-  it "can do a curtail operation" do
+  it "curtails" do
     [0,1,2].j('}:').should eq([0,1])
   end
 
-  it "can do a sign operation" do
-    [0, 1, 2, -5].j('*').should eq([0,1,1,-1])
+  it "signs" do
+    [0,1,2,-5].j('*').should eq([0,1,1,-1])
   end
 
   it "handles empty case on head"
