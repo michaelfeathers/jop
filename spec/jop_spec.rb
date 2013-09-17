@@ -127,6 +127,14 @@ describe Jop do
     [0,1,2].j('{:').should eq(2)
   end
 
+  it "can do a behead operation" do
+    [0,1,2].j('}.').should eq([1,2])
+  end
+
+  it "can do a curtail operation" do
+    [0,1,2].j('}:').should eq([0,1])
+  end
+
   it "handles empty case on head"
 
 end
