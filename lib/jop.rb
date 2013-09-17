@@ -45,7 +45,8 @@ class Jop
   end
 
   def generate_matrix elements, ary
-    fill_matrix(elements.take(2).map(&:to_i), ary.cycle.each)
+    ranges = elements.take_while {|n| numeric_literal?(n) }.map(&:to_i)
+    fill_matrix(ranges, ary.cycle.each)
   end
 
   def eval_on ary
