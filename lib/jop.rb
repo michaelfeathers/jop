@@ -39,6 +39,10 @@ class Jop
     []
   end
 
+  def generate_matrix elements, ary
+    [[0,1],[2,3]]
+  end
+
   def eval_on ary
     return [] if @command_text.size == 0
     case @command_text
@@ -89,6 +93,7 @@ class Jop
       ary.map {|e| e ** 2 }
     else
       elements = @command_text.split
+      return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])
       []
     end

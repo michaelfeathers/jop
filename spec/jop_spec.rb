@@ -147,6 +147,11 @@ describe Jop do
     [0,1,2].j('*:').should eq([0,1,4])
   end
 
+  it "creates a 2 x 2 matrix from 4 elements" do
+    [0,1,2,3].j('2 2 $').should eq([[0,1],[2,3]])
+  end
+
+
   it "handles empty case on head"
 
 end
