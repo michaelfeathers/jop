@@ -81,6 +81,8 @@ class Jop
       ary.drop(1)
     when '}:'
       ary.take(ary.count-1)
+    when '*'
+      ary.map {|e| e <=> 0 }
     else
       elements = @command_text.split
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])

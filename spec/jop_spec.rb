@@ -135,6 +135,10 @@ describe Jop do
     [0,1,2].j('}:').should eq([0,1])
   end
 
+  it "can do a sign operation" do
+    [0, 1, 2, -5].j('*').should eq([0,1,1,-1])
+  end
+
   it "handles empty case on head"
 
 end
