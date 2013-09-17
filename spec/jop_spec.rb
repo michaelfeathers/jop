@@ -139,6 +139,10 @@ describe Jop do
     [0,1,2,-5].j('*').should eq([0,1,1,-1])
   end
 
+  it "exponentiates" do
+    [0,1,2].j('^').should eq([1, Math.exp(1), Math.exp(2)])
+  end
+
   it "handles empty case on head"
 
 end
