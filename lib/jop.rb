@@ -39,8 +39,13 @@ class Jop
     []
   end
 
+  def fill_matrix ranges, elements
+    return elements.next if ranges.size <= 0
+    (0...ranges.first).map { fill_matrix(ranges.drop(1), elements) }
+  end
+
   def generate_matrix elements, ary
-    [[0,1],[2,3]]
+    fill_matrix(elements.take(2).map(&:to_i), ary.cycle.each)
   end
 
   def eval_on ary

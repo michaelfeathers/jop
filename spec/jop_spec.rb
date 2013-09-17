@@ -151,6 +151,9 @@ describe Jop do
     [0,1,2,3].j('2 2 $').should eq([[0,1],[2,3]])
   end
 
+  it "creates a 2 x 2 matrix from a single element" do
+    [0].j('2 2 $').should eq([[0,0],[0,0]])
+  end
 
   it "handles empty case on head"
 
