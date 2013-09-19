@@ -97,6 +97,10 @@ class Jop
       ary.map {|n| Math::exp(n) }
     when '*:'
       ary.map {|e| e ** 2 }
+    when '<.'
+      ary.map {|e| e.floor }
+    when '>.'
+      ary.map {|e| e.ceil }
     else
       elements = @command_text.split
       return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])

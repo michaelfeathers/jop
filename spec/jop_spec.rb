@@ -163,6 +163,14 @@ describe Jop do
     [0,1].j('2 3 $').should eq([[0,1,0],[1,0,1]])
   end
 
+  it "floors" do
+    [0.5,1.6,2.0].j('<.').should eq([0,1,2])
+  end
+
+  it "ceilings" do
+    [1.7,2.2,0.1].j('>.').should eq([2,3,1])
+  end
+
   it "handles empty case on head"
 
 end
