@@ -171,6 +171,10 @@ describe Jop do
     [1.7,2.2,0.1].j('>.').should eq([2,3,1])
   end
 
+  # it "executes two commands" do
+  #  [0,1,2].j('%+:').should eq([0.0,0.5,1.0])
+  # end
+
   it "handles empty case on head"
 
 end
