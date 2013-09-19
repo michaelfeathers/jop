@@ -159,6 +159,10 @@ describe Jop do
     [0].j('2 2 2 $').should eq([[[0,0],[0,0]],[[0,0],[0,0]]])
   end
 
+  it "creates a 2 x 3 matrix from a 2-period cycle" do
+    [0,1].j('2 3 $').should eq([[0,1,0],[1,0,1]])
+  end
+
   it "handles empty case on head"
 
 end
