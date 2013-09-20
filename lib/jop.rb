@@ -3,6 +3,7 @@
 class Jop
   def initialize command_text
     @command_text = command_text
+    @tokens = tokenize(command_text)
   end
 
   def numeric_literal? text
@@ -47,6 +48,10 @@ class Jop
   def generate_matrix elements, ary
     ranges = elements.take_while {|n| numeric_literal?(n) }.map(&:to_i)
     fill_matrix(ranges, ary.cycle.each)
+  end
+
+  def tokenize command_text
+
   end
 
   def eval_on ary
