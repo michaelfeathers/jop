@@ -4,6 +4,10 @@
 class Tokenizer
   attr_reader :tokens
 
+  def inflectable? char
+    '+/'.include?(char)
+  end
+
   def initialize text
     @tokens = []
     stream = make_stream(text)
@@ -13,7 +17,7 @@ class Tokenizer
     when '+'
       @tokens << stream[0]
     when ':'
-      @tokens << '+:' if stream[1] == '+'
+      @tokens << (stream[1] + ':') if inflectable?(stream[1])
     else
       number = text.chars.take_while {|c| c =~ /^\d/ }.reduce(:+)
       @tokens << number if number && number.length > 0

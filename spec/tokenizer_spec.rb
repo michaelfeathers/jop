@@ -28,4 +28,8 @@ describe Tokenizer do
     tokens('+:')[0].should eq('+:')
   end
 
+  it 'recogizes gradeup' do
+    tokens('/:')[0].should eq('/:')
+  end
+
 end
