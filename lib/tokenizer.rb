@@ -17,8 +17,7 @@ class Tokenizer
     when ':'
       @tokens << (stream[1] + ':') if inflectable?(stream[1])
     else
-      number = text.chars.take_while {|c| c =~ /^\d/ }.reduce(:+)
-      @tokens << number if number && number.length > 0
+      @tokens << text.to_i.to_s if text =~ /^\d/
     end
   end
 
