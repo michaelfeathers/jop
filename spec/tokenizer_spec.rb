@@ -24,4 +24,8 @@ describe Tokenizer do
     tokens('+')[0].should eq('+')
   end
 
+  it 'recognizes double' do
+    tokens('+:')[0].should eq('+:')
+  end
+
 end
