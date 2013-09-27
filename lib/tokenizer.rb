@@ -12,9 +12,7 @@ class Tokenizer
     @tokens = []
     stream = make_stream(text)
     case stream[0]
-    when '#'
-      @tokens << stream[0]
-    when '+'
+    when '#','+'
       @tokens << stream[0]
     when ':'
       @tokens << (stream[1] + ':') if inflectable?(stream[1])
