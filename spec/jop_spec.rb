@@ -175,6 +175,6 @@ describe Jop do
   #  [0,1,2].j('%+:').should eq([0.0,0.5,1.0])
   # end
 
-  it "handles empty case on head"
+  # it "handles empty case on head"
 
 end
