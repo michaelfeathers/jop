@@ -1,0 +1,950 @@
+method_name,commit,committer,date,file_name,status,start_line,end_line
+Jop::initialize,f3e1480f872c60362ac1e375b1a62f1659bd3afb,Michael Feathers,2013-09-14 19:27:24 +0200,lib/jop.rb,added,4,6
+Jop::eval_on,f3e1480f872c60362ac1e375b1a62f1659bd3afb,Michael Feathers,2013-09-14 19:27:24 +0200,lib/jop.rb,added,8,10
+Array::j,f3e1480f872c60362ac1e375b1a62f1659bd3afb,Michael Feathers,2013-09-14 19:27:24 +0200,lib/jop.rb,added,14,16
+SPEC::Jop::does identity,f3e1480f872c60362ac1e375b1a62f1659bd3afb,Michael Feathers,2013-09-14 19:27:24 +0200,spec/jop_spec.rb,added,5,7
+SPEC::Jop::can add,ca7a6990e48a6050e2abad0164b1a76f718c601c,Michael Feathers,2013-09-14 19:49:55 +0200,spec/jop_spec.rb,added,9,11
+Jop::eval_on,ca7a6990e48a6050e2abad0164b1a76f718c601c,Michael Feathers,2013-09-14 19:49:55 +0200,lib/jop.rb,changed,8,12
+SPEC::Jop::does identity,ca7a6990e48a6050e2abad0164b1a76f718c601c,Michael Feathers,2013-09-14 19:49:55 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can multiply,a6250a2e2e57450c64aa0f94f84b53a10de0dd09,Michael Feathers,2013-09-14 20:23:24 +0200,spec/jop_spec.rb,added,13,15
+Jop::eval_on,a6250a2e2e57450c64aa0f94f84b53a10de0dd09,Michael Feathers,2013-09-14 20:23:24 +0200,lib/jop.rb,changed,8,13
+SPEC::Jop::does identity,a6250a2e2e57450c64aa0f94f84b53a10de0dd09,Michael Feathers,2013-09-14 20:23:24 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,a6250a2e2e57450c64aa0f94f84b53a10de0dd09,Michael Feathers,2013-09-14 20:23:24 +0200,spec/jop_spec.rb,changed,9,11
+Jop::eval_on,06fc32841835c6185aa050b8bc4241eaf5470b99,Michael Feathers,2013-09-14 20:26:12 +0200,lib/jop.rb,changed,8,17
+SPEC::Jop::can sort ascending,3dd65b42893076a773f4cea13679032dad38f44a,Michael Feathers,2013-09-14 20:32:38 +0200,spec/jop_spec.rb,added,17,19
+SPEC::Jop::can sort descending,3dd65b42893076a773f4cea13679032dad38f44a,Michael Feathers,2013-09-14 20:32:38 +0200,spec/jop_spec.rb,added,21,23
+Jop::eval_on,3dd65b42893076a773f4cea13679032dad38f44a,Michael Feathers,2013-09-14 20:32:38 +0200,lib/jop.rb,changed,8,21
+SPEC::Jop::does identity,3dd65b42893076a773f4cea13679032dad38f44a,Michael Feathers,2013-09-14 20:32:38 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,3dd65b42893076a773f4cea13679032dad38f44a,Michael Feathers,2013-09-14 20:32:38 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,3dd65b42893076a773f4cea13679032dad38f44a,Michael Feathers,2013-09-14 20:32:38 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can reverse,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,spec/jop_spec.rb,added,25,27
+Jop::eval_on,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,lib/jop.rb,changed,8,23
+SPEC::Jop::does identity,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,1d81c3bcdc0b1dc263e5a714e91c985180b20639,Michael Feathers,2013-09-14 20:34:30 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can take two elements,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,added,29,31
+SPEC::Jop::can take one elements,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,added,33,35
+SPEC::Jop::can take an arbitrary number of elements,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,added,37,39
+Jop::eval_on,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,lib/jop.rb,changed,8,28
+SPEC::Jop::does identity,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,96ff9a7e998756c4c5fb2b410f77f34c7b702637,Michael Feathers,2013-09-14 20:55:01 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can grade up,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,added,42,44
+Jop::eval_on,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,lib/jop.rb,changed,8,30
+SPEC::Jop::does identity,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one elements,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,17ed4ee1e5a3779e49811f2a218255f2ce357fa8,Michael Feathers,2013-09-14 21:36:16 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can grade down,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,added,47,49
+Jop::eval_on,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,lib/jop.rb,changed,8,32
+SPEC::Jop::does identity,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one elements,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can grade up,210f673e091f10b9be51d4bc1a4ecbabfefc0836,Michael Feathers,2013-09-14 21:39:21 +0200,spec/jop_spec.rb,changed,43,45
+SPEC::Jop::can take one element,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,added,33,35
+SPEC::Jop::can take negative elements,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,added,41,43
+Jop::eval_on,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,lib/jop.rb,changed,8,34
+SPEC::Jop::does identity,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take an arbitrary number of elements,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can grade up,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can grade down,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can take one elements,65e7dae3a984422faafdacdbf705f8eaaef65dba,Michael Feathers,2013-09-14 21:50:44 +0200,spec/jop_spec.rb,deleted,33,35
+Jop::numeric_literal?,b912b193ac01b2dc77739a21ae9fc89eef44f546,Michael Feathers,2013-09-14 22:13:09 +0200,lib/jop.rb,added,8,10
+Jop::to_numeric,b912b193ac01b2dc77739a21ae9fc89eef44f546,Michael Feathers,2013-09-14 22:13:09 +0200,lib/jop.rb,added,12,15
+Jop::eval_on,b912b193ac01b2dc77739a21ae9fc89eef44f546,Michael Feathers,2013-09-14 22:13:09 +0200,lib/jop.rb,changed,17,45
+SPEC::Jop::can decrement,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,added,53,55
+Jop::eval_on,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,lib/jop.rb,changed,17,47
+SPEC::Jop::does identity,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can grade up,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can grade down,c996a6ca4c68d5af9b5690ffe1a56ff505c79486,Michael Feathers,2013-09-14 22:17:20 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can increment,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,added,57,59
+Jop::eval_on,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,lib/jop.rb,changed,17,49
+SPEC::Jop::does identity,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can grade up,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can grade down,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can decrement,128d67bc48847b360924ad1ae3e71e8ea4314ad7,Michael Feathers,2013-09-14 22:19:13 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can size arrays,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,added,61,63
+Jop::eval_on,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,lib/jop.rb,changed,17,51
+SPEC::Jop::does identity,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can grade up,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can grade down,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can decrement,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can increment,680980eafad48ff7cf21331a0cb20cb7c0c9de41,Michael Feathers,2013-09-14 22:21:23 +0200,spec/jop_spec.rb,changed,57,59
+Jop::eval_on,50d7993ea9641b74213dc3f8380f190b3db3aa65,Michael Feathers,2013-09-14 22:25:01 +0200,lib/jop.rb,changed,17,49
+Jop::grade_up,1f6e97ba8da8dfbedc08a27dbdf3143cdfe1e53c,Michael Feathers,2013-09-14 22:28:45 +0200,lib/jop.rb,added,17,19
+Jop::grade_down,1f6e97ba8da8dfbedc08a27dbdf3143cdfe1e53c,Michael Feathers,2013-09-14 22:28:45 +0200,lib/jop.rb,added,21,23
+Jop::eval_on,1f6e97ba8da8dfbedc08a27dbdf3143cdfe1e53c,Michael Feathers,2013-09-14 22:28:45 +0200,lib/jop.rb,changed,25,58
+Jop::numeric_literal?,79f11c5616e330568a0859d6a42e2627c01e4724,Michael Feathers,2013-09-14 22:30:14 +0200,lib/jop.rb,changed,8,10
+Jop::eval_on,79f11c5616e330568a0859d6a42e2627c01e4724,Michael Feathers,2013-09-14 22:30:14 +0200,lib/jop.rb,changed,25,57
+Jop::to_numeric,c5176632009bbb62078a183775eb6915b2786265,Michael Feathers,2013-09-15 14:53:09 +0200,lib/jop.rb,changed,12,15
+Jop::grade_up,c5176632009bbb62078a183775eb6915b2786265,Michael Feathers,2013-09-15 14:53:09 +0200,lib/jop.rb,changed,17,19
+SPEC::Jop::can do reciprocal,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,added,65,67
+SPEC::Jop::can do reciprocal with zeros,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,added,69,71
+SPEC::Jop::can do complement,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,added,73,75
+Jop::eval_on,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,lib/jop.rb,changed,25,61
+SPEC::Jop::does identity,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can grade up,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can grade down,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can decrement,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can increment,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can size arrays,9f7d355780f94deb9621247a4d6020520ed0ff8f,Michael Feathers,2013-09-15 15:04:39 +0200,spec/jop_spec.rb,changed,61,63
+Jop::number_prefix_command,afe671807b1589efcff1948076e073fe3795e365,Michael Feathers,2013-09-15 15:13:49 +0200,lib/jop.rb,added,25,32
+Jop::eval_on,afe671807b1589efcff1948076e073fe3795e365,Michael Feathers,2013-09-15 15:13:49 +0200,lib/jop.rb,changed,34,66
+SPEC::Jop::can drop two elements,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,added,45,47
+SPEC::Jop::can drop negative elements,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,added,49,51
+Jop::number_prefix_command,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,lib/jop.rb,changed,25,36
+SPEC::Jop::does identity,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can grade up,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,fe928584007fc955e38579b061d4aef226b40c22,Michael Feathers,2013-09-15 15:25:12 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,added,85,87
+Jop::number_prefix_command,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,lib/jop.rb,changed,25,39
+SPEC::Jop::does identity,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,7ad2513ea971849c408f77a530909461cc6ce487,Michael Feathers,2013-09-15 21:26:26 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate an even number of times,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,added,89,90
+SPEC::Jop::can rotate an even number of times::can rotate an odd number of times,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,added,90,91
+SPEC::Jop::can rotate an even number of times::can rotate an odd number of times::can rotate negative,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,added,91,95
+SPEC::Jop::does identity,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate,ee0c9daf7a8fcfffd4fa212b23a5a380f9061dfc,Michael Feathers,2013-09-15 21:28:44 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate an odd number of times,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,added,93,95
+SPEC::Jop::can rotate negative,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,added,97,101
+Jop::number_prefix_command,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,lib/jop.rb,changed,25,40
+SPEC::Jop::does identity,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate an even number of times,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate an even number of times::can rotate an odd number of times,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,deleted,90,91
+SPEC::Jop::can rotate an even number of times::can rotate an odd number of times::can rotate negative,9ee3830cf42aaecb35e16cb24c089bdfcca2ad13,Michael Feathers,2013-09-15 21:32:48 +0200,spec/jop_spec.rb,deleted,91,95
+SPEC::Jop::can rotate right,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,added,85,87
+SPEC::Jop::can rotate right an even number of times,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,added,89,91
+SPEC::Jop::can rotate left,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,added,97,101
+SPEC::Jop::does identity,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate an odd number of times,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,deleted,85,87
+SPEC::Jop::can rotate an even number of times,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,deleted,89,91
+SPEC::Jop::can rotate negative,c412c4522f4caad6f8f39a4db2575fda4606e60e,Michael Feathers,2013-09-16 08:24:50 +0200,spec/jop_spec.rb,deleted,97,101
+SPEC::Jop::can rotate right an odd number of times,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,added,93,95
+SPEC::Jop::can rotate left an even number of times,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,added,101,103
+SPEC::Jop::can rotate left an odd number of times,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,added,105,107
+SPEC::Jop::does identity,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate left,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate an odd number of times,b32d998b153a82bb9e0ae29690ea4ad0b171f237,Michael Feathers,2013-09-16 08:30:54 +0200,spec/jop_spec.rb,deleted,93,95
+SPEC::Jop::can double,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,added,109,111
+Jop::eval_on,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,lib/jop.rb,changed,42,76
+SPEC::Jop::does identity,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,141526fb354dc1d915303d1aee6c935c811eb74e,Michael Feathers,2013-09-16 08:34:58 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can halve,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,added,113,115
+Jop::eval_on,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,lib/jop.rb,changed,42,78
+SPEC::Jop::does identity,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,823e75c4e2ea51a873f819a1bdf306afc58452a5,Michael Feathers,2013-09-16 08:37:22 +0200,spec/jop_spec.rb,changed,109,111
+Jop::grade_up,54fed1c181bc0e7a099ee6bb0d81435c2f6d1a4c,Michael Feathers,2013-09-16 08:47:49 +0200,lib/jop.rb,changed,17,19
+Jop::grade_up,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,lib/jop.rb,changed,17,19
+SPEC::Jop::does identity,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::can halve,05c240d756816c88031eeb154e216789d14c652f,Michael Feathers,2013-09-16 08:54:03 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::can do a running sum,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,added,117,119
+Jop::eval_on,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,lib/jop.rb,changed,42,81
+SPEC::Jop::does identity,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::can halve,52fa2d9fb2e98b9c43a40b647edc020de0d416ab,Michael Feathers,2013-09-16 14:05:58 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::can do a head operation,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,added,121,123
+Jop::eval_on,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,lib/jop.rb,changed,42,83
+SPEC::Jop::does identity,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::can halve,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::can do a running sum,e9e1497c138fac6cfc66630f5442cdf6701c4b69,Michael Feathers,2013-09-16 18:01:29 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::can do tail operation,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,added,125,127
+SPEC::Jop::handles empty case on head,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,added,129,131
+Jop::eval_on,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,lib/jop.rb,changed,42,85
+SPEC::Jop::does identity,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::can halve,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::can do a running sum,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::can do a head operation,57c17ef6083831358fd07ae7f0333470191604fc,Michael Feathers,2013-09-16 18:03:23 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::can do a behead operation,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,added,129,131
+SPEC::Jop::can do a curtail operation,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,added,133,135
+Jop::eval_on,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,lib/jop.rb,changed,42,89
+SPEC::Jop::does identity,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::can halve,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::can do a running sum,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::can do a head operation,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::can do tail operation,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::handles empty case on head,ad75292fb2b3fe1568ccf2629f4ba4a6cbd7c70a,Michael Feathers,2013-09-16 20:56:55 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::can do a sign operation,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,added,137,139
+Jop::eval_on,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,lib/jop.rb,changed,42,91
+SPEC::Jop::does identity,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::can add,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::can multiply,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::can sort ascending,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::can sort descending,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::can reverse,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::can take two elements,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::can take one element,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::can take an arbitrary number of elements,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::can take negative elements,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::can drop two elements,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::can drop negative elements,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::can grade up,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::can grade down,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::can decrement,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::can increment,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::can size arrays,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::can do reciprocal,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::can do reciprocal with zeros,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::can do complement,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::can rotate right,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::can rotate right an even number of times,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::can rotate right an odd number of times,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::can rotate left,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::can rotate left an even number of times,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::can rotate left an odd number of times,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::can double,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::can halve,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::can do a running sum,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::can do a head operation,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::can do tail operation,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::can do a behead operation,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::can do a curtail operation,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::handles empty case on head,c10546fd87e9db8a8be035468f2d644cf1a768be,Michael Feathers,2013-09-17 05:19:15 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::sums,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,9,11
+SPEC::Jop::multiplies,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,13,15
+SPEC::Jop::sorts ascending,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,17,19
+SPEC::Jop::sort descending,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,21,23
+SPEC::Jop::reverses,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,25,27
+SPEC::Jop::takes two elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,29,31
+SPEC::Jop::takes one element,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,33,35
+SPEC::Jop::takes three elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,37,39
+SPEC::Jop::takes negative elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,41,43
+SPEC::Jop::drops two elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,45,47
+SPEC::Jop::drops negative elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,49,51
+SPEC::Jop::grades up,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,53,55
+SPEC::Jop::grades down,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,57,59
+SPEC::Jop::decrements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,61,63
+SPEC::Jop::increments,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,65,67
+SPEC::Jop::sizes arrays,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,69,71
+SPEC::Jop::calcultes the reciprocal,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,73,75
+SPEC::Jop::calculates the reciprocal with zeros,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,77,79
+SPEC::Jop::does complements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,81,83
+SPEC::Jop::rotates right,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,85,87
+SPEC::Jop::rotates right an even number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,89,91
+SPEC::Jop::rotates right an odd number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,93,95
+SPEC::Jop::rotates left,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,97,99
+SPEC::Jop::rotates left an even number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,101,103
+SPEC::Jop::rotates left an odd number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,105,107
+SPEC::Jop::doubles,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,109,111
+SPEC::Jop::halves,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,113,115
+SPEC::Jop::does running sums,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,117,119
+SPEC::Jop::heads,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,121,123
+SPEC::Jop::tails,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,125,127
+SPEC::Jop::beheads,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,129,131
+SPEC::Jop::curtails,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,133,135
+SPEC::Jop::signs,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,added,137,139
+SPEC::Jop::does identity,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::handles empty case on head,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::can add,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,9,11
+SPEC::Jop::can multiply,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,13,15
+SPEC::Jop::can sort ascending,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,17,19
+SPEC::Jop::can sort descending,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,21,23
+SPEC::Jop::can reverse,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,25,27
+SPEC::Jop::can take two elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,29,31
+SPEC::Jop::can take one element,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,33,35
+SPEC::Jop::can take an arbitrary number of elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,37,39
+SPEC::Jop::can take negative elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,41,43
+SPEC::Jop::can drop two elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,45,47
+SPEC::Jop::can drop negative elements,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,49,51
+SPEC::Jop::can grade up,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,53,55
+SPEC::Jop::can grade down,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,57,59
+SPEC::Jop::can decrement,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,61,63
+SPEC::Jop::can increment,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,65,67
+SPEC::Jop::can size arrays,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,69,71
+SPEC::Jop::can do reciprocal,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,73,75
+SPEC::Jop::can do reciprocal with zeros,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,77,79
+SPEC::Jop::can do complement,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,81,83
+SPEC::Jop::can rotate right,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,85,87
+SPEC::Jop::can rotate right an even number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,89,91
+SPEC::Jop::can rotate right an odd number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,93,95
+SPEC::Jop::can rotate left,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,97,99
+SPEC::Jop::can rotate left an even number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,101,103
+SPEC::Jop::can rotate left an odd number of times,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,105,107
+SPEC::Jop::can double,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,109,111
+SPEC::Jop::can halve,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,113,115
+SPEC::Jop::can do a running sum,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,117,119
+SPEC::Jop::can do a head operation,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,121,123
+SPEC::Jop::can do tail operation,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,125,127
+SPEC::Jop::can do a behead operation,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,129,131
+SPEC::Jop::can do a curtail operation,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,133,135
+SPEC::Jop::can do a sign operation,3b5c666b5db0c5eb7073c134633d15743c57bc16,Michael Feathers,2013-09-17 05:29:06 +0200,spec/jop_spec.rb,deleted,137,139
+SPEC::Jop::exponentiates,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,added,141,143
+Jop::eval_on,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,lib/jop.rb,changed,42,93
+SPEC::Jop::does identity,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::handles empty case on head,8c4cd6ef3382154ec3707f6522c819fe9964cce0,Michael Feathers,2013-09-17 07:58:48 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::squares,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,added,145,147
+Jop::eval_on,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,lib/jop.rb,changed,42,95
+SPEC::Jop::does identity,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::handles empty case on head,72456ba29785397f49d6d28a07b863ded75c6e19,Michael Feathers,2013-09-17 08:13:39 +0200,spec/jop_spec.rb,changed,149,151
+Jop::generate_matrix,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,lib/jop.rb,added,42,44
+SPEC::Jop::creates a 2 x 2 matrix from 4 elements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,added,149,151
+Jop::eval_on,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,lib/jop.rb,changed,46,100
+SPEC::Jop::does identity,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::squares,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::handles empty case on head,96298831bb60c0dd2fc1d5e2be9b6d964cf662f8,Michael Feathers,2013-09-17 08:41:21 +0200,spec/jop_spec.rb,changed,154,156
+Jop::fill_matrix,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,lib/jop.rb,added,42,45
+SPEC::Jop::creates a 2 x 2 matrix from a single element,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,added,153,155
+Jop::generate_matrix,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,lib/jop.rb,changed,47,49
+SPEC::Jop::does identity,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::squares,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::creates a 2 x 2 matrix from 4 elements,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,149,151
+SPEC::Jop::handles empty case on head,1ae8d43ca4eeae9ca2fcc0aef0623b513cd1bc14,Michael Feathers,2013-09-17 10:04:05 +0200,spec/jop_spec.rb,changed,157,159
+SPEC::Jop::creates a 2 x 2 x 2 matrix from a single element,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,added,157,159
+Jop::generate_matrix,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,lib/jop.rb,changed,47,50
+SPEC::Jop::does identity,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::squares,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::creates a 2 x 2 matrix from 4 elements,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,149,151
+SPEC::Jop::creates a 2 x 2 matrix from a single element,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,153,155
+SPEC::Jop::handles empty case on head,746af0569a04d54a61f8cfc8de7877772e39eed5,Michael Feathers,2013-09-17 16:29:36 +0200,spec/jop_spec.rb,changed,161,163
+SPEC::Jop::creates a 2 x 3 matrix from a 2-period cycle,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,added,161,163
+SPEC::Jop::does identity,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::squares,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::creates a 2 x 2 matrix from 4 elements,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,149,151
+SPEC::Jop::creates a 2 x 2 matrix from a single element,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,153,155
+SPEC::Jop::creates a 2 x 2 x 2 matrix from a single element,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,157,159
+SPEC::Jop::handles empty case on head,271cee6e5ab8b74f3c2915c62b62864561345e6d,Michael Feathers,2013-09-19 10:59:21 +0200,spec/jop_spec.rb,changed,165,167
+SPEC::Jop::floors,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,added,165,167
+SPEC::Jop::ceilings,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,added,169,171
+Jop::eval_on,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,lib/jop.rb,changed,52,110
+SPEC::Jop::does identity,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::squares,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::creates a 2 x 2 matrix from 4 elements,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,149,151
+SPEC::Jop::creates a 2 x 2 matrix from a single element,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,153,155
+SPEC::Jop::creates a 2 x 2 x 2 matrix from a single element,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,157,159
+SPEC::Jop::creates a 2 x 3 matrix from a 2-period cycle,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,161,163
+SPEC::Jop::handles empty case on head,29ff70065cee0fb378ee8e8a2a12b43b31dead2b,Michael Feathers,2013-09-19 11:06:38 +0200,spec/jop_spec.rb,changed,173,175
+SPEC::Jop::does identity,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,5,7
+SPEC::Jop::sums,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,9,11
+SPEC::Jop::multiplies,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,13,15
+SPEC::Jop::sorts ascending,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,17,19
+SPEC::Jop::sort descending,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,21,23
+SPEC::Jop::reverses,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,25,27
+SPEC::Jop::takes two elements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,29,31
+SPEC::Jop::takes one element,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,33,35
+SPEC::Jop::takes three elements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,37,39
+SPEC::Jop::takes negative elements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,41,43
+SPEC::Jop::drops two elements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,45,47
+SPEC::Jop::drops negative elements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,49,51
+SPEC::Jop::grades up,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,53,55
+SPEC::Jop::grades down,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,57,59
+SPEC::Jop::decrements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,61,63
+SPEC::Jop::increments,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,65,67
+SPEC::Jop::sizes arrays,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,69,71
+SPEC::Jop::calcultes the reciprocal,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,73,75
+SPEC::Jop::calculates the reciprocal with zeros,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,77,79
+SPEC::Jop::does complements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,81,83
+SPEC::Jop::rotates right,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,85,87
+SPEC::Jop::rotates right an even number of times,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,89,91
+SPEC::Jop::rotates right an odd number of times,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,93,95
+SPEC::Jop::rotates left,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,97,99
+SPEC::Jop::rotates left an even number of times,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,101,103
+SPEC::Jop::rotates left an odd number of times,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,105,107
+SPEC::Jop::doubles,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,109,111
+SPEC::Jop::halves,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,113,115
+SPEC::Jop::does running sums,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,117,119
+SPEC::Jop::heads,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,121,123
+SPEC::Jop::tails,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,125,127
+SPEC::Jop::beheads,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,129,131
+SPEC::Jop::curtails,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,133,135
+SPEC::Jop::signs,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,137,139
+SPEC::Jop::exponentiates,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,141,143
+SPEC::Jop::squares,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,145,147
+SPEC::Jop::creates a 2 x 2 matrix from 4 elements,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,149,151
+SPEC::Jop::creates a 2 x 2 matrix from a single element,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,153,155
+SPEC::Jop::creates a 2 x 2 x 2 matrix from a single element,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,157,159
+SPEC::Jop::creates a 2 x 3 matrix from a 2-period cycle,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,161,163
+SPEC::Jop::floors,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,165,167
+SPEC::Jop::ceilings,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,169,171
+SPEC::Jop::handles empty case on head,57fefdc2f63dcc4ab050e7d68f0a98b05801bc03,Michael Feathers,2013-09-19 17:40:56 +0200,spec/jop_spec.rb,changed,177,179
+Jop::tokenize,a45be02593ed2d57136326f1bb995ca2d7efc48e,Michael Feathers,2013-09-20 17:13:16 +0200,lib/jop.rb,added,53,55
+Jop::initialize,a45be02593ed2d57136326f1bb995ca2d7efc48e,Michael Feathers,2013-09-20 17:13:16 +0200,lib/jop.rb,changed,4,7
+Tokenizer::initialize,dc48e12efa6d058970eb97ac0089b6c254ffea74,Michael Feathers,2013-09-21 20:15:25 +0200,lib/tokenizer.rb,added,7,9
+SPEC::Tokenizer::produces no tokens on an empty string,dc48e12efa6d058970eb97ac0089b6c254ffea74,Michael Feathers,2013-09-21 20:15:25 +0200,spec/tokenizer_spec.rb,added,5,7
+SPEC::Tokenizer::recognizes a number,9bd1a2fecc9be0b320db7309e5c045d70bd14576,Michael Feathers,2013-09-21 20:23:11 +0200,spec/tokenizer_spec.rb,added,9,11
+Tokenizer::initialize,9bd1a2fecc9be0b320db7309e5c045d70bd14576,Michael Feathers,2013-09-21 20:23:11 +0200,lib/tokenizer.rb,changed,7,11
+SPEC::Tokenizer::produces no tokens on an empty string,9bd1a2fecc9be0b320db7309e5c045d70bd14576,Michael Feathers,2013-09-21 20:23:11 +0200,spec/tokenizer_spec.rb,changed,5,7

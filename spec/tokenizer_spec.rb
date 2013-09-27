@@ -10,4 +10,9 @@ describe Tokenizer do
   it "recognizes a number" do
     Tokenizer.new('42').tokens[0].should eq('42')
   end
+
+  it "recognizes count" do
+    Tokenizer.new('#').tokens[0].should eq('#')
+  end
+
 end
