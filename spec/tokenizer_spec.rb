@@ -20,4 +20,8 @@ describe Tokenizer do
     tokens('#')[0].should eq('#')
   end
 
+  it 'recognizes plus' do
+    tokens('+')[0].should eq('+')
+  end
+
 end

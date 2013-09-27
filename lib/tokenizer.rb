@@ -10,6 +10,8 @@ class Tokenizer
     case stream[0]
     when '#'
       @tokens << stream[0]
+    when '+'
+      @tokens << stream[0]
     else
       number = text.chars.take_while {|c| c =~ /^\d/ }.reduce(:+)
       @tokens << number if number && number.length > 0
