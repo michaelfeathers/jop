@@ -17,7 +17,7 @@ class Tokenizer
     when ':'
       @tokens << (stream[1] + ':') if inflectable?(stream[1])
     else
-      @tokens << text.to_i.to_s if text =~ /^\d/
+      @tokens << stream.reverse.to_i.to_s if stream =~ /^\d/
     end
   end
 
