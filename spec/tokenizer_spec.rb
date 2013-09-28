@@ -8,28 +8,32 @@ describe Tokenizer do
     Tokenizer.new(text).tokens
   end
 
+  def first_of text
+    tokens(text)[0]
+  end
+
   it 'produces no tokens on an empty string' do
     tokens('').count.should eq(0)
   end
 
   it 'recognizes a number' do
-    tokens('42')[0].should eq('42')
+    first_of('42').should eq('42')
   end
 
   it 'recognizes count' do
-    tokens('#')[0].should eq('#')
+    first_of('#').should eq('#')
   end
 
   it 'recognizes plus' do
-    tokens('+')[0].should eq('+')
+    first_of('+').should eq('+')
   end
 
   it 'recognizes double' do
-    tokens('+:')[0].should eq('+:')
+    first_of('+:').should eq('+:')
   end
 
   it 'recogizes gradeup' do
-    tokens('/:')[0].should eq('/:')
+    first_of('/:').should eq('/:')
   end
 
 end
