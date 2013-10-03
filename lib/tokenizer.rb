@@ -26,6 +26,8 @@ class Tokenizer
           match_data = /^_?\d+/.match(stream)
           @tokens << match_data[0]
           advance(match_data[0].length)
+        else
+          break
         end
       end
     end
