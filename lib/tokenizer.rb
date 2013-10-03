@@ -9,10 +9,10 @@ class Tokenizer
   end
 
   def initialize text
-    @stream = make_stream(text)
+    @stream = text
     @tokens = []
 
-    while stream.length > 0
+    while tokenizing?
       if operator?(current_char)
         if '.:'.include?(next_char)
           @tokens << current_char + next_char
@@ -33,8 +33,8 @@ class Tokenizer
 
   private
 
-  def make_stream text
-    text
+  def tokenizing?
+    @stream.length > 0
   end
 
   def current_char
