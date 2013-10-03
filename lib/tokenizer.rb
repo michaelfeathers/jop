@@ -22,10 +22,10 @@ class Tokenizer
           advance(1)
         end
       else
-        if stream =~ /^\d/
-          len = stream.chars.take_while {|e| e =~ /^\d/ }.length
-          @tokens << stream.to_i.to_s
-          advance(len)
+        if stream =~ /^\d+/
+          match_data = /^\d+/.match(stream)
+          @tokens << match_data[0]
+          advance(match_data[0].length)
         end
       end
     end
