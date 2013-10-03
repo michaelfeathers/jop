@@ -7,19 +7,19 @@ describe Jop do
     [].j('').should eq([])
   end
 
-  it "sums" do
+  pending "sums" do
     [3,2,1].j('+/').should eq(6)
   end
 
-  it "multiplies" do
+  pending "multiplies" do
     [2,4,6].j('*/').should eq(48)
   end
 
-  it "sorts ascending" do
+  pending "sorts ascending" do
     [1,0,2].j('/:~').should eq([0,1,2])
   end
 
-  it "sort descending" do
+  pending "sort descending" do
     [1,0,2].j('\:~').should eq([2,1,0])
   end
 
@@ -71,7 +71,7 @@ describe Jop do
     [1,2].j('#').should eq(2)
   end
 
-  it "calcultes the reciprocal" do
+  it "calculates the reciprocal" do
     [1,2].j('%').should eq([1,0.5])
   end
 
@@ -115,7 +115,7 @@ describe Jop do
     [0,1,2].j('-:').should eq([0,0.5,1.0])
   end
 
-  it "does running sums" do
+  pending "does running sums" do
     [0,1,2].j('+/\\').should eq([0,1,3])
   end
 

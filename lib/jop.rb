@@ -1,9 +1,10 @@
 
+require 'tokenizer'
 
 class Jop
   def initialize command_text
     @command_text = command_text
-    @tokens = tokenize(command_text)
+    @tokens = Tokenizer.new(command_text).tokens
   end
 
   def numeric_literal? text
@@ -50,13 +51,10 @@ class Jop
     fill_matrix(ranges, ary.cycle.each)
   end
 
-  def tokenize command_text
-
-  end
-
   def eval_on ary
+    return [] if @tokens.empty?
     return [] if @command_text.size == 0
-    case @command_text
+    case @tokens[0]
     when '#'
       ary.count
     when '+/'
