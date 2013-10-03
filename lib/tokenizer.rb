@@ -2,28 +2,31 @@
 
 
 class Tokenizer
-  attr_reader :tokens
+  attr_reader :tokens, :stream
 
   def operator? char
     '+/#'.include?(char)
   end
 
   def initialize text
+    @stream = make_stream(text)
     @tokens = []
-    stream = make_stream(text)
 
     while stream.length > 0
-      if operator?(stream[0])
-        if '.:'.include?(stream[1])
-          @tokens << stream[0] + stream[1]
-          stream = stream[2..-1]
+      if operator?(current_char)
+        if '.:'.include?(next_char)
+          @tokens << current_char + next_char
+          advance(2)
         else
-          @tokens << stream[0]
-          stream = stream[1..-1]
+          @tokens << current_char
+          advance(1)
         end
       else
-        @tokens << stream.to_i.to_s if stream =~ /^\d/
-          stream = stream[1..-1]
+        if stream =~ /^\d/
+          len = stream.chars.take_while {|e| e =~ /^\d/ }.length
+          @tokens << stream.to_i.to_s
+          advance(len)
+        end
       end
     end
   end
@@ -31,7 +34,20 @@ class Tokenizer
   private
 
   def make_stream text
-    text + ' '
+    text
   end
+
+  def current_char
+    @stream.length > 0 ? @stream[0] : ' '
+  end
+
+  def next_char
+    @stream.length > 1 ? @stream[1] : ' '
+  end
+
+  def advance amount
+    @stream = @stream[amount..-1]
+  end
+
 
 end
