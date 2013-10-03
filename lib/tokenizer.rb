@@ -22,8 +22,8 @@ class Tokenizer
           advance(1)
         end
       else
-        if stream =~ /^\d+/
-          match_data = /^\d+/.match(stream)
+        if stream =~ /^_?\d+/
+          match_data = /^_?\d+/.match(stream)
           @tokens << match_data[0]
           advance(match_data[0].length)
         end

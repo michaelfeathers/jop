@@ -41,4 +41,8 @@ describe Tokenizer do
     tokens('+#')[1].should eq('#')
   end
 
+  it 'recognizes negative numbers' do
+    first_of('_23').should eq('_23')
+  end
+
 end
