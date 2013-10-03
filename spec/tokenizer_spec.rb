@@ -36,4 +36,9 @@ describe Tokenizer do
     first_of('/:').should eq('/:')
   end
 
+  it 'recognizes two tokens' do
+    tokens('++')[0].should eq('+')
+    tokens('+#')[1].should eq('#')
+  end
+
 end

@@ -12,14 +12,19 @@ class Tokenizer
     @tokens = []
     stream = make_stream(text)
 
-    if operator?(stream[0])
-      if '.:'.include?(stream[1])
-        @tokens << stream[0] + stream[1]
+    while stream.length > 0
+      if operator?(stream[0])
+        if '.:'.include?(stream[1])
+          @tokens << stream[0] + stream[1]
+          stream = stream[2..-1]
+        else
+          @tokens << stream[0]
+          stream = stream[1..-1]
+        end
       else
-        @tokens << stream[0]
+        @tokens << stream.to_i.to_s if stream =~ /^\d/
+          stream = stream[1..-1]
       end
-    else
-     @tokens << stream.to_i.to_s if stream =~ /^\d/
     end
   end
 
