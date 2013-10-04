@@ -53,7 +53,6 @@ class Jop
 
   def eval_on ary
     return [] if @tokens.empty?
-    return [] if @command_text.size == 0
     case @tokens[0]
     when '#'
       ary.count
