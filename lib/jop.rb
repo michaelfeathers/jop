@@ -104,7 +104,7 @@ class Jop
     when '>.'
       ary.map {|e| e.ceil }
     else
-      elements = @command_text.split
+      elements = @tokens
       return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
       return number_prefix_command(elements, ary) if numeric_literal?(elements[0])
       []
