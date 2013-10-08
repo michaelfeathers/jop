@@ -12,6 +12,7 @@ class Tokenizer
     @stream = text
     @tokens = []
 
+    skip_whitespace
     while tokenizing?
       if operator?(current_char)
         if '.:'.include?(next_char)
@@ -30,6 +31,7 @@ class Tokenizer
           break
         end
       end
+      skip_whitespace
     end
   end
 
@@ -49,6 +51,10 @@ class Tokenizer
 
   def advance amount
     @stream = @stream[amount..-1]
+  end
+
+  def skip_whitespace
+    @stream.lstrip!
   end
 
 

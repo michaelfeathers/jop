@@ -45,4 +45,9 @@ describe Tokenizer do
     first_of('_23').should eq('_23')
   end
 
+  it 'recognizes two numbers' do
+    tokens('0 1')[0].should eq('0')
+    tokens('0 1')[1].should eq('1')
+  end
+
 end
