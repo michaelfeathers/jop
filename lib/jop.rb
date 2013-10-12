@@ -3,7 +3,7 @@ require 'tokenizer'
 
 class Tally
   def run ary, interpreter
-    ary.count
+    [ary.count]
   end
 end
 
@@ -67,7 +67,7 @@ class Jop
           ary.reverse.take(-number).reverse
         end
       else
-        ary.take(1).first
+       [ary.take(1).first]
       end
     when '}.'
       if @tokens.size > 0 && numeric_literal?(@tokens[0])
@@ -93,7 +93,6 @@ class Jop
       end
     when '#'
       Tally.new.run(ary, self)
-      ary.count
     when '+/'
       ary.reduce(:+)
     when '*/'
@@ -122,7 +121,7 @@ class Jop
       sum = 0
       ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
     when '{:'
-      ary.drop(ary.count-1).first
+      [ary.drop(ary.count-1).first]
     when '}:'
       ary.take(ary.count-1)
     when '*'

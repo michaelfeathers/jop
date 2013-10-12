@@ -8,11 +8,11 @@ describe Jop do
   end
 
   pending "sums" do
-    [3,2,1].j('+/').should eq(6)
+    [3,2,1].j('+/').should eq([6])
   end
 
   pending "multiplies" do
-    [2,4,6].j('*/').should eq(48)
+    [2,4,6].j('*/').should eq([48])
   end
 
   pending "sorts ascending" do
@@ -68,7 +68,7 @@ describe Jop do
   end
 
   it "sizes arrays" do
-    [1,2].j('#').should eq(2)
+    [1,2].j('#').should eq([2])
   end
 
   it "calculates the reciprocal" do
@@ -120,11 +120,11 @@ describe Jop do
   end
 
   it "heads" do
-    [0,1,2].j('{.').should eq(0)
+    [0,1,2].j('{.').should eq([0])
   end
 
   it "tails" do
-    [0,1,2].j('{:').should eq(2)
+    [0,1,2].j('{:').should eq([2])
   end
 
   it "beheads" do
@@ -172,7 +172,7 @@ describe Jop do
   end
 
   it "executes two commands" do
-    [0,1,2].j('#+:').should eq(3)
+    [0,1,2].j('#+:').should eq([3])
    end
 
   # it "handles empty case on head"
