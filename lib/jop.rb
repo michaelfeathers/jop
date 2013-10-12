@@ -4,7 +4,7 @@ require 'tokenizer'
 class Jop
   def initialize command_text
     @command_text = command_text
-    @tokens = Tokenizer.new(command_text).tokens
+    @tokens = Tokenizer.new(command_text).tokens.reverse
   end
 
   def numeric_literal? text
@@ -24,23 +24,6 @@ class Jop
     grade_up(ary).reverse
   end
 
-  def number_prefix_command command_ary, ary
-    number = to_numeric(command_ary[0])
-    case command_ary[1]
-    when '{.'
-      return ary.take(number) if number >= 0
-      return ary.reverse.take(-number).reverse
-    when '}.'
-      return ary.drop(number) if number >= 0
-      return ary.reverse.drop(-number).reverse
-    when '|.'
-      segment_length = number % ary.length
-      segment = ary.take(segment_length)
-      return ary.drop(segment_length) + segment
-    end
-    []
-  end
-
   def fill_matrix ranges, elements
     return elements.next if ranges.size <= 0
     (0...ranges.first).map { fill_matrix(ranges.drop(1), elements) }
@@ -54,6 +37,37 @@ class Jop
   def eval_on ary
     return [] if @tokens.empty?
     case @tokens[0]
+    when '{.'
+      if @tokens.size > 1 && numeric_literal?(@tokens[1])
+        number = to_numeric(@tokens[1])
+        if number >= 0
+          ary.take(number)
+        else
+          ary.reverse.take(-number).reverse
+        end
+      else
+        ary.take(1).first
+      end
+    when '}.'
+      if @tokens.size > 1 && numeric_literal?(@tokens[1])
+        number = to_numeric(@tokens[1])
+        if number >= 0
+          ary.drop(number)
+        else
+          ary.reverse.drop(-number).reverse
+        end
+      else
+        ary.drop(1)
+      end
+    when '|.'
+      if @tokens.size > 1 && numeric_literal?(@tokens[1])
+        number = to_numeric(@tokens[1])
+        segment_length = number % ary.length
+        segment = ary.take(segment_length)
+        ary.drop(segment_length) + segment
+      else
+        ary.reverse
+      end
     when '#'
       ary.count
     when '+/'
@@ -64,8 +78,6 @@ class Jop
       ary.sort
     when '\:~'
       ary.sort.reverse
-    when '|.'
-      ary.reverse
     when '/:'
       grade_up(ary)
     when '\:'
@@ -85,12 +97,8 @@ class Jop
     when '+/\\'
       sum = 0
       return ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
-    when '{.'
-      ary.take(1).first
     when '{:'
       ary.drop(ary.count-1).first
-    when '}.'
-      ary.drop(1)
     when '}:'
       ary.take(ary.count-1)
     when '*'
@@ -103,10 +111,9 @@ class Jop
       ary.map {|e| e.floor }
     when '>.'
       ary.map {|e| e.ceil }
-    else
-      elements = @tokens
+    when '$'
+      elements = @tokens.drop(1).reverse
       return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
-      return number_prefix_command(elements, ary) if numeric_literal?(elements[0])
       []
     end
   end

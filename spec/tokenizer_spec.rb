@@ -50,4 +50,8 @@ describe Tokenizer do
     tokens('0 1')[1].should eq('1')
   end
 
+  it 'recognizes the $ sign' do
+    first_of('$').should eq('$')
+  end
+
 end
