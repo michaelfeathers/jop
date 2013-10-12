@@ -39,7 +39,23 @@ class Shape < Op
     fill_matrix(ranges, ary.cycle.each)
   end
 
+end
 
+
+class Take < Op
+  def run ary, interpreter
+    if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
+      number = to_numeric(interpreter.tokens[0])
+      interpreter.advance(1)
+      if number >= 0
+        ary.take(number)
+      else
+        ary.reverse.take(-number).reverse
+      end
+     else
+       ary.take(1)
+     end
+  end
 end
 
 
@@ -85,17 +101,7 @@ class Jop
     advance(1)
     case op
     when '{.'
-      if @tokens.size > 0 && numeric_literal?(@tokens[0])
-        number = to_numeric(@tokens[0])
-        advance(1)
-        if number >= 0
-          ary.take(number)
-        else
-          ary.reverse.take(-number).reverse
-        end
-      else
-       [ary.take(1).first]
-      end
+      Take.new.run(ary, self)
     when '}.'
       if @tokens.size > 0 && numeric_literal?(@tokens[0])
         number = to_numeric(@tokens[0])
