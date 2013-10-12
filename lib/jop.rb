@@ -1,14 +1,51 @@
 
 require 'tokenizer'
 
-class Tally
+class Op
+  def numeric_literal? text
+    text =~ /^_?\d+/
+  end
+
+  def to_numeric text
+     return text.to_i if text =~ /^\d+/
+     -(text[1...text.length]).to_i
+  end
+end
+
+class Tally < Op
   def run ary, interpreter
     [ary.count]
   end
 end
 
 
+class Shape < Op
+  def run ary, interpreter
+    elements = interpreter.tokens.reverse
+    interpreter.advance(elements.length)
+    return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
+    []
+  end
+
+  private
+
+  def fill_matrix ranges, elements
+    return elements.next if ranges.size <= 0
+    (0...ranges.first).map { fill_matrix(ranges.drop(1), elements) }
+  end
+
+  def generate_matrix elements, ary
+    ranges = elements.take_while {|n| numeric_literal?(n) }.map(&:to_i)
+    fill_matrix(ranges, ary.cycle.each)
+  end
+
+
+end
+
+
 class Jop
+  attr_reader :tokens
+
   def initialize command_text
     @command_text = command_text
     @tokens = Tokenizer.new(command_text).tokens.reverse
@@ -29,16 +66,6 @@ class Jop
 
   def grade_down ary
     grade_up(ary).reverse
-  end
-
-  def fill_matrix ranges, elements
-    return elements.next if ranges.size <= 0
-    (0...ranges.first).map { fill_matrix(ranges.drop(1), elements) }
-  end
-
-  def generate_matrix elements, ary
-    ranges = elements.take_while {|n| numeric_literal?(n) }.map(&:to_i)
-    fill_matrix(ranges, ary.cycle.each)
   end
 
   def advance amount
@@ -135,10 +162,7 @@ class Jop
     when '>.'
       ary.map {|e| e.ceil }
     when '$'
-      elements = @tokens.reverse
-      advance(elements.length)
-      return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
-      []
+      Shape.new.run(ary, self)
     end
   end
 end

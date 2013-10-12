@@ -176,5 +176,7 @@ describe Jop do
    end
 
   # it "handles empty case on head"
+  # it "shape works with arbirtary number of dimensions"
+  # it "shape works in a train"
 
 end
