@@ -1,6 +1,13 @@
 
 require 'tokenizer'
 
+class Tally
+  def run ary, interpreter
+    ary.count
+  end
+end
+
+
 class Jop
   def initialize command_text
     @command_text = command_text
@@ -34,12 +41,25 @@ class Jop
     fill_matrix(ranges, ary.cycle.each)
   end
 
+  def advance amount
+    @tokens = @tokens[1...@tokens.length]
+  end
+
   def eval_on ary
-    return [] if @tokens.empty?
-    case @tokens[0]
+    result = ary
+    if not @tokens.empty?
+      result = eval_op(result)
+    end
+    result
+  end
+
+  def eval_op ary
+    op = @tokens[0]
+    advance(1)
+    case op
     when '{.'
-      if @tokens.size > 1 && numeric_literal?(@tokens[1])
-        number = to_numeric(@tokens[1])
+      if @tokens.size > 0 && numeric_literal?(@tokens[0])
+        number = to_numeric(@tokens[0])
         if number >= 0
           ary.take(number)
         else
@@ -49,8 +69,8 @@ class Jop
         ary.take(1).first
       end
     when '}.'
-      if @tokens.size > 1 && numeric_literal?(@tokens[1])
-        number = to_numeric(@tokens[1])
+      if @tokens.size > 0 && numeric_literal?(@tokens[0])
+        number = to_numeric(@tokens[0])
         if number >= 0
           ary.drop(number)
         else
@@ -60,8 +80,8 @@ class Jop
         ary.drop(1)
       end
     when '|.'
-      if @tokens.size > 1 && numeric_literal?(@tokens[1])
-        number = to_numeric(@tokens[1])
+      if @tokens.size > 0 && numeric_literal?(@tokens[0])
+        number = to_numeric(@tokens[0])
         segment_length = number % ary.length
         segment = ary.take(segment_length)
         ary.drop(segment_length) + segment
@@ -69,6 +89,7 @@ class Jop
         ary.reverse
       end
     when '#'
+      Tally.new.run(ary, self)
       ary.count
     when '+/'
       ary.reduce(:+)
@@ -96,7 +117,7 @@ class Jop
       ary.map {|e| e / 2.0 }
     when '+/\\'
       sum = 0
-      return ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
+      ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
     when '{:'
       ary.drop(ary.count-1).first
     when '}:'
@@ -112,7 +133,7 @@ class Jop
     when '>.'
       ary.map {|e| e.ceil }
     when '$'
-      elements = @tokens.drop(1).reverse
+      elements = @tokens.reverse
       return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
       []
     end
