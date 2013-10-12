@@ -42,12 +42,12 @@ class Jop
   end
 
   def advance amount
-    @tokens = @tokens[1...@tokens.length]
+    @tokens = @tokens[amount...@tokens.length]
   end
 
   def eval_on ary
     result = ary
-    if not @tokens.empty?
+    while not @tokens.empty?
       result = eval_op(result)
     end
     result
@@ -60,6 +60,7 @@ class Jop
     when '{.'
       if @tokens.size > 0 && numeric_literal?(@tokens[0])
         number = to_numeric(@tokens[0])
+        advance(1)
         if number >= 0
           ary.take(number)
         else
@@ -71,6 +72,7 @@ class Jop
     when '}.'
       if @tokens.size > 0 && numeric_literal?(@tokens[0])
         number = to_numeric(@tokens[0])
+        advance(1)
         if number >= 0
           ary.drop(number)
         else
@@ -82,6 +84,7 @@ class Jop
     when '|.'
       if @tokens.size > 0 && numeric_literal?(@tokens[0])
         number = to_numeric(@tokens[0])
+        advance(1)
         segment_length = number % ary.length
         segment = ary.take(segment_length)
         ary.drop(segment_length) + segment
@@ -134,6 +137,7 @@ class Jop
       ary.map {|e| e.ceil }
     when '$'
       elements = @tokens.reverse
+      advance(elements.length)
       return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
       []
     end
