@@ -13,6 +13,7 @@ class Op
 end
 
 class Tally < Op
+  REP = '#'
   def run ary, interpreter
     [ary.count]
   end
@@ -20,6 +21,7 @@ end
 
 
 class Shape < Op
+  REP = '$'
   def run ary, interpreter
     elements = interpreter.tokens.reverse
     interpreter.advance(elements.length)
@@ -43,6 +45,7 @@ end
 
 
 class Take < Op
+  REP = '{.'
   def run ary, interpreter
     if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
       number = to_numeric(interpreter.tokens[0])
@@ -65,6 +68,12 @@ class Jop
   def initialize command_text
     @command_text = command_text
     @tokens = Tokenizer.new(command_text).tokens.reverse
+    gather_operators
+  end
+
+  def gather_operators
+    @operators = []
+    ObjectSpace.each_object(::Class) {|klass| @operators << klass.new if klass < Op }
   end
 
   def numeric_literal? text
@@ -124,8 +133,8 @@ class Jop
       else
         ary.reverse
       end
-    when '#'
-      Tally.new.run(ary, self)
+    # when '#'
+    #  Tally.new.run(ary, self)
     when '+/'
       ary.reduce(:+)
     when '*/'
@@ -169,6 +178,9 @@ class Jop
       ary.map {|e| e.ceil }
     when '$'
       Shape.new.run(ary, self)
+    else
+      selected = @operators.select {|op_class| op_class.class::REP == op }
+      selected.first.run(ary, self) if selected.size == 1
     end
   end
 end
