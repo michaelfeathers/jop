@@ -100,6 +100,12 @@ class Halve < Op; REP = '-:'
 end
 
 
+class Identity < Op; REP = '+'
+  def run ary, interpreter
+    ary
+  end
+end
+
 class Increment < Op; REP = '>:'
   def run ary, interpreter
     ary.map {|e| e + 1 }
