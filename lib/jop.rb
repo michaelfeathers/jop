@@ -112,7 +112,7 @@ class Insert < Op; REP = '/'
     if interpreter.tokens[0] == '+'
       interpreter.advance(1)
       [ary.reduce(:+)]
-    elsif interpreter.tokens[0] == '*'
+    elsif interpreter.tokens[0] == Sign::REP
       interpreter.advance(1)
       [ary.reduce(:*)]
     end
@@ -195,9 +195,9 @@ class Take < Op; REP = '{.'
       else
         ary.reverse.take(-number).reverse
       end
-     else
-       ary.take(1)
-     end
+    else
+      ary.take(1)
+    end
   end
 end
 
@@ -211,10 +211,10 @@ end
 
 class Tilde < Op; REP = '~'
   def run ary, interpreter
-    if interpreter.tokens[0] == '/:'
+    if interpreter.tokens[0] == GradeUp::REP
       interpreter.advance(1)
       ary.sort
-    elsif interpreter.tokens[0] == '\:'
+    elsif interpreter.tokens[0] == GradeDown::REP
       interpreter.advance(1)
       ary.sort.reverse
     end
