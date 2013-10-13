@@ -7,19 +7,19 @@ describe Jop do
     [].j('').should eq([])
   end
 
-  pending "sums" do
+  it "sums" do
     [3,2,1].j('+/').should eq([6])
   end
 
-  pending "multiplies" do
+  it "multiplies" do
     [2,4,6].j('*/').should eq([48])
   end
 
-  pending "sorts ascending" do
+  it "sorts ascending" do
     [1,0,2].j('/:~').should eq([0,1,2])
   end
 
-  pending "sort descending" do
+  it "sort descending" do
     [1,0,2].j('\:~').should eq([2,1,0])
   end
 
@@ -115,10 +115,6 @@ describe Jop do
     [0,1,2].j('-:').should eq([0,0.5,1.0])
   end
 
-  pending "does running sums" do
-    [0,1,2].j('+/\\').should eq([0,1,3])
-  end
-
   it "heads" do
     [0,1,2].j('{.').should eq([0])
   end
@@ -173,7 +169,7 @@ describe Jop do
 
   it "executes two commands" do
     [0,1,2].j('#+:').should eq([3])
-   end
+  end
 
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"

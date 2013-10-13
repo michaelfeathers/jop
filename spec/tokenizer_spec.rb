@@ -54,4 +54,8 @@ describe Tokenizer do
     first_of('$').should eq('$')
   end
 
+  it 'recognizes insert' do
+    first_of('/').should eq('/')
+  end
+
 end

@@ -110,11 +110,11 @@ end
 class Insert < Op; REP = '/'
   def run ary, interpreter
     if interpreter.tokens[0] == '+'
-      ary.reduce(:+)
       interpreter.advance(1)
+      [ary.reduce(:+)]
     elsif interpreter.tokens[0] == '*'
-      ary.reduce(:*)
       interpreter.advance(1)
+      [ary.reduce(:*)]
     end
   end
 end
@@ -209,6 +209,19 @@ class Tally < Op; REP = '#'
 end
 
 
+class Tilde < Op; REP = '~'
+  def run ary, interpreter
+    if interpreter.tokens[0] == '/:'
+      interpreter.advance(1)
+      ary.sort
+    elsif interpreter.tokens[0] == '\:'
+      interpreter.advance(1)
+      ary.sort.reverse
+    end
+  end
+end
+
+
 class Jop
   attr_reader :tokens
 
@@ -242,18 +255,8 @@ class Jop
   def eval_op ary
     op = @tokens[0]
     advance(1)
-    case op
-    when "/:~"
-      ary.sort
-    when '\:~'
-      ary.sort.reverse
-    when '+/\\'
-      sum = 0
-      ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
-    else
-      selected = operators.select {|op_class| op_class.class::REP == op }
-      selected.first.run(ary, self) if selected.size == 1
-    end
+    selected = operators.select {|op_class| op_class.class::REP == op }
+    selected.first.run(ary, self) if selected.size == 1
   end
 end
 
