@@ -107,6 +107,19 @@ class Increment < Op; REP = '>:'
 end
 
 
+class Insert < Op; REP = '/'
+  def run ary, interpreter
+    if interpreter.tokens[0] == '+'
+      ary.reduce(:+)
+      interpreter.advance(1)
+    elsif interpreter.tokens[0] == '*'
+      ary.reduce(:*)
+      interpreter.advance(1)
+    end
+  end
+end
+
+
 class Reciprocal < Op; REP = '%'
   def run ary, interpreter
     ary.map {|e| 1 / e.to_f }
@@ -230,10 +243,6 @@ class Jop
     op = @tokens[0]
     advance(1)
     case op
-    when '+/'
-      ary.reduce(:+)
-    when '*/'
-      ary.reduce(:*)
     when "/:~"
       ary.sort
     when '\:~'
