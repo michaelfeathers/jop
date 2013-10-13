@@ -12,16 +12,66 @@ class Op
   end
 end
 
-class Tally < Op
-  REP = '#'
+
+class Drop < Op
+  REP = '}.'
+
   def run ary, interpreter
-    [ary.count]
+    if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
+       number = to_numeric(interpreter.tokens[0])
+       interpreter.advance(1)
+       if number >= 0
+         ary.drop(number)
+       else
+         ary.reverse.drop(-number).reverse
+       end
+      else
+        ary.drop(1)
+     end
+  end
+end
+
+
+class GradeUp < Op
+  REP = '/:'
+
+  def run ary, interpreter
+    ary.zip(0...ary.length).sort_by {|e| e[0] }.map {|e| e[1] }
+  end
+
+end
+
+
+class GradeDown < Op
+  REP = '\:'
+
+  def run ary, interpreter
+    GradeUp.new.run(ary, self).reverse
+  end
+
+end
+
+
+class ReverseRotate < Op
+  REP = '|.'
+
+  def run ary, interpreter
+    if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
+      number = to_numeric(interpreter.tokens[0])
+      interpreter.advance(1)
+      segment_length = number % ary.length
+      segment = ary.take(segment_length)
+      ary.drop(segment_length) + segment
+    else
+      ary.reverse
+    end
   end
 end
 
 
 class Shape < Op
   REP = '$'
+
   def run ary, interpreter
     elements = interpreter.tokens.reverse
     interpreter.advance(elements.length)
@@ -62,6 +112,15 @@ class Take < Op
 end
 
 
+class Tally < Op
+  REP = '#'
+
+  def run ary, interpreter
+    [ary.count]
+  end
+end
+
+
 class Jop
   attr_reader :tokens
 
@@ -85,14 +144,6 @@ class Jop
      -(text[1...text.length]).to_i
   end
 
-  def grade_up ary
-    ary.zip(0...ary.length).sort_by {|e| e[0] }.map {|e| e[1] }
-  end
-
-  def grade_down ary
-    grade_up(ary).reverse
-  end
-
   def advance amount
     @tokens = @tokens[amount...@tokens.length]
   end
@@ -109,32 +160,6 @@ class Jop
     op = @tokens[0]
     advance(1)
     case op
-    when '{.'
-      Take.new.run(ary, self)
-    when '}.'
-      if @tokens.size > 0 && numeric_literal?(@tokens[0])
-        number = to_numeric(@tokens[0])
-        advance(1)
-        if number >= 0
-          ary.drop(number)
-        else
-          ary.reverse.drop(-number).reverse
-        end
-      else
-        ary.drop(1)
-      end
-    when '|.'
-      if @tokens.size > 0 && numeric_literal?(@tokens[0])
-        number = to_numeric(@tokens[0])
-        advance(1)
-        segment_length = number % ary.length
-        segment = ary.take(segment_length)
-        ary.drop(segment_length) + segment
-      else
-        ary.reverse
-      end
-    # when '#'
-    #  Tally.new.run(ary, self)
     when '+/'
       ary.reduce(:+)
     when '*/'
@@ -143,10 +168,6 @@ class Jop
       ary.sort
     when '\:~'
       ary.sort.reverse
-    when '/:'
-      grade_up(ary)
-    when '\:'
-      grade_down(ary)
     when '<:'
       ary.map {|e| e - 1 }
     when '>:'
@@ -176,8 +197,6 @@ class Jop
       ary.map {|e| e.floor }
     when '>.'
       ary.map {|e| e.ceil }
-    when '$'
-      Shape.new.run(ary, self)
     else
       selected = @operators.select {|op_class| op_class.class::REP == op }
       selected.first.run(ary, self) if selected.size == 1
