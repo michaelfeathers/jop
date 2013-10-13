@@ -13,18 +13,51 @@ class Op
 end
 
 
-class Drop < Op
-  REP = '}.'
+class Ceil < Op; REP = '>.'
+  def run ary, interpreter
+    ary.map {|e| e.ceil }
+  end
+end
 
+
+class Complement < Op; REP = '-.'
+  def run ary, interpreter
+    ary.map {|e| 1 - e }
+  end
+end
+
+
+class Curtail < Op; REP = '}:'
+  def run ary, interpreter
+      ary.take(ary.count-1)
+  end
+end
+
+
+class Decrement < Op; REP = '<:'
+  def run ary, interpreter
+    ary.map {|e| e - 1 }
+  end
+end
+
+
+class Double < Op; REP = '+:'
+  def run ary, interpreter
+    ary.map {|e| e * 2 }
+  end
+end
+
+
+class Drop < Op; REP = '}.'
   def run ary, interpreter
     if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
-       number = to_numeric(interpreter.tokens[0])
-       interpreter.advance(1)
-       if number >= 0
-         ary.drop(number)
-       else
-         ary.reverse.drop(-number).reverse
-       end
+      number = to_numeric(interpreter.tokens[0])
+      interpreter.advance(1)
+      if number >= 0
+        ary.drop(number)
+      else
+        ary.reverse.drop(-number).reverse
+      end
       else
         ary.drop(1)
      end
@@ -32,29 +65,56 @@ class Drop < Op
 end
 
 
-class GradeUp < Op
-  REP = '/:'
+class Exp < Op; REP = '^'
+  def run ary, interpreter
+    ary.map {|n| Math::exp(n) }
+  end
+end
 
+
+class Floor < Op; REP = '<.'
+  def run ary, interpreter
+    ary.map {|e| e.floor }
+  end
+end
+
+
+class GradeDown < Op; REP = '\:'
+  def run ary, interpreter
+    GradeUp.new.run(ary, interpreter).reverse
+  end
+end
+
+
+class GradeUp < Op; REP = '/:'
   def run ary, interpreter
     ary.zip(0...ary.length).sort_by {|e| e[0] }.map {|e| e[1] }
   end
-
 end
 
 
-class GradeDown < Op
-  REP = '\:'
-
+class Halve < Op; REP = '-:'
   def run ary, interpreter
-    GradeUp.new.run(ary, self).reverse
+    ary.map {|e| e / 2.0 }
   end
-
 end
 
 
-class ReverseRotate < Op
-  REP = '|.'
+class Increment < Op; REP = '>:'
+  def run ary, interpreter
+    ary.map {|e| e + 1 }
+  end
+end
 
+
+class Reciprocal < Op; REP = '%'
+  def run ary, interpreter
+    ary.map {|e| 1 / e.to_f }
+  end
+end
+
+
+class ReverseRotate < Op; REP = '|.'
   def run ary, interpreter
     if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
       number = to_numeric(interpreter.tokens[0])
@@ -69,9 +129,7 @@ class ReverseRotate < Op
 end
 
 
-class Shape < Op
-  REP = '$'
-
+class Shape < Op; REP = '$'
   def run ary, interpreter
     elements = interpreter.tokens.reverse
     interpreter.advance(elements.length)
@@ -90,12 +148,31 @@ class Shape < Op
     ranges = elements.take_while {|n| numeric_literal?(n) }.map(&:to_i)
     fill_matrix(ranges, ary.cycle.each)
   end
-
 end
 
 
-class Take < Op
-  REP = '{.'
+class Sign < Op; REP = '*'
+  def run ary, interpreter
+    ary.map {|e| e <=> 0 }
+  end
+end
+
+
+class Square < Op; REP = '*:'
+  def run ary, interpreter
+    ary.map {|e| e ** 2 }
+  end
+end
+
+
+class Tail < Op; REP = '{:'
+  def run ary, interpreter
+      [ary.drop(ary.count-1).first]
+  end
+end
+
+
+class Take < Op; REP = '{.'
   def run ary, interpreter
     if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
       number = to_numeric(interpreter.tokens[0])
@@ -112,9 +189,7 @@ class Take < Op
 end
 
 
-class Tally < Op
-  REP = '#'
-
+class Tally < Op; REP = '#'
   def run ary, interpreter
     [ary.count]
   end
@@ -127,21 +202,6 @@ class Jop
   def initialize command_text
     @command_text = command_text
     @tokens = Tokenizer.new(command_text).tokens.reverse
-    gather_operators
-  end
-
-  def gather_operators
-    @operators = []
-    ObjectSpace.each_object(::Class) {|klass| @operators << klass.new if klass < Op }
-  end
-
-  def numeric_literal? text
-    text =~ /^_?\d+/
-  end
-
-  def to_numeric text
-     return text.to_i if text =~ /^\d+/
-     -(text[1...text.length]).to_i
   end
 
   def advance amount
@@ -156,6 +216,16 @@ class Jop
     result
   end
 
+  private
+
+  def operators
+    if not @operators
+      @operators = []
+      ObjectSpace.each_object(::Class) {|klass| @operators << klass.new if klass < Op }
+    end
+    @operators
+  end
+
   def eval_op ary
     op = @tokens[0]
     advance(1)
@@ -168,37 +238,11 @@ class Jop
       ary.sort
     when '\:~'
       ary.sort.reverse
-    when '<:'
-      ary.map {|e| e - 1 }
-    when '>:'
-      ary.map {|e| e + 1 }
-    when '%'
-      ary.map {|e| 1 / e.to_f }
-    when '-.'
-      ary.map {|e| 1 - e }
-    when '+:'
-      ary.map {|e| e * 2 }
-    when '-:'
-      ary.map {|e| e / 2.0 }
     when '+/\\'
       sum = 0
       ary.each_with_object([]) {|e, ac| sum = sum + e; ac << sum }
-    when '{:'
-      [ary.drop(ary.count-1).first]
-    when '}:'
-      ary.take(ary.count-1)
-    when '*'
-      ary.map {|e| e <=> 0 }
-    when '^'
-      ary.map {|n| Math::exp(n) }
-    when '*:'
-      ary.map {|e| e ** 2 }
-    when '<.'
-      ary.map {|e| e.floor }
-    when '>.'
-      ary.map {|e| e.ceil }
     else
-      selected = @operators.select {|op_class| op_class.class::REP == op }
+      selected = operators.select {|op_class| op_class.class::REP == op }
       selected.first.run(ary, self) if selected.size == 1
     end
   end
