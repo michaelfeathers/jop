@@ -179,6 +179,23 @@ describe Jop do
     [[0.1,2.3],[3.4,5.5]].j('<.')
   end
 
+  it "applies double deeply" do
+    [[0,1,2],[3,4,5]].j('+:').should eq([[0,2,4],[6,8,10]])
+  end
+
+  it "applies decrement deeply" do
+    [[0,1,2],[3,4,5]].j('<:').should eq([[-1,0,1],[2,3,4]])
+  end
+
+  it "handles multidimensional sort" do
+    [[0,0,0],[0,0,1],[0,0,0]].j('/:~').should eq([[0,0,0],[0,0,0],[0,0,1]])
+  end
+
+  it "handles multidimensional gradeup" do
+    [[0,0,0],[0,0,1],[0,0,0]].j('/:').should eq([0,2,1])
+  end
+
+  # it "handles empty case on head"
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"
   # it "shape works in a train"

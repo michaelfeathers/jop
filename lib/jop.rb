@@ -41,14 +41,14 @@ end
 
 class Decrement < Op; REP = '<:'
   def run ary, interpreter
-    ary.map {|e| e - 1 }
+    apply_monad_deep(ary) {|e| e - 1 }
   end
 end
 
 
 class Double < Op; REP = '+:'
   def run ary, interpreter
-    ary.map {|e| e * 2 }
+    apply_monad_deep(ary) {|e| e * 2 }
   end
 end
 
@@ -184,7 +184,6 @@ end
 
 class Square < Op; REP = '*:'
   def run ary, interpreter
-    ary.map {|e| e ** 2 }
     apply_monad_deep(ary) {|e| e ** 2 }
   end
 end
