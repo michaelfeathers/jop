@@ -74,7 +74,12 @@ end
 
 class Floor < Op; REP = '<.'
   def run ary, interpreter
-    ary.map {|e| e.floor }
+    apply_monad_deep(ary) {|e| e.floor }
+  end
+
+  def apply_monad_deep element, &block
+    return yield element unless element.kind_of? Array
+    element.map {|e| apply_monad_deep(e, &block) }
   end
 end
 

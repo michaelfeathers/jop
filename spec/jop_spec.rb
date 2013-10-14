@@ -175,6 +175,10 @@ describe Jop do
     [0,1,2].j('+').should eq([0,1,2])
   end
 
+  it "applies floor deeply" do
+    [[0.1,2.3],[3.4,5.5]].j('<.')
+  end
+
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"
   # it "shape works in a train"
