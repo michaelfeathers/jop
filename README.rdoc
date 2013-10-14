@@ -1,0 +1,136 @@
+= jop
+
+* http://github.com/michaelfeathers/jop/
+
+== DESCRIPTION:
+
+Jop is a gem that adds operations of the J programming language to Ruby arrays.
+
+One could legitmately ask why anyone would want to do such a thing.  No one in
+the Ruby community has been screaming "Oh, if only I could rotate N dimensional
+matrices and reduce them with powerful operators from an obscure APL-derived
+language, I could be happy."  But it's only a matter of time, isn't it?
+
+== FEATURES/PROBLEMS:
+
+* Currently supports a handful of monadic operators and a few dyads
+* Operators can be chained together but there is no implementation
+  of 'hook' or 'fork' yet
+* Must operators assume arrays of integers and floats
+* Error handling isn't graceful
+
+== SYNOPSIS:
+
+Imagine wanting to square an array of integers. We can do this in Jop using
+the '*:' operator:
+
+  [0, 1, 2].j('*:')
+
+From this we get:
+
+  [0, 2, 4]
+
+In typical J fashion, operators work on arrays of any dimension:
+
+  [[0, 1, 2], [3, 4, 5]].j('*:')
+
+Here's the result:
+
+  [[0, 1, 4], [9, 16, 25]]
+
+In Jop, J operators are applied right to left.  We can do a 'take' operation
+to get the the first array of  [[0, 1, 2], [3, 4, 5]] after squaring the
+elements like this:
+
+  [[0, 1, 2], [3, 4, 5]].j('{.*:')
+
+Here we are applying the 'take' operator '{.' after the square operator '*:'
+This is the result:
+
+  [0, 1, 4]
+
+At this point, you might be wondering where we get all of these cool
+multi-dimensional arrays. We can create them using the the Shape operator
+'$':
+
+  [3 4].j('1 2 3 $')
+
+This expression produces:
+
+[[1, 2], [3, 1],  [2, 3],  [1, 2]]
+
+3 and 4 are the dimensions of the array we are producing.  The array is filled
+with the values 1 and 2 from the beginning, repeating the sequence as long as
+there are more elements to fill.
+
+Arrays can be of any dimension.  It you really want to try this, you can but it's
+between you and the Ruby and runtime:
+
+  [12, 12, 12, 12, 12].j('42 $')
+
+The Coup de grâce is the insert operator '/'.  You can use it to insert an operator
+between all elements of an array and evaluate it. This is akin to Ruby's inject:
+
+  [1, 2, 3].j('+/')
+
+This code inserts '+' between 1, 2, and 3.  We get:
+
+  [6]
+
+Insertion works on multi-dimensional arrays too:
+
+  [[1, 2, 3], [4, 5, 6]].j('+/')
+
+We get:
+
+  [5, 7, 9]
+
+We can 'fold' across both dimensions like this:
+
+  [[1, 2, 3], [4, 5, 6]].j('+/+/')
+
+That give us the total sum:
+
+  [21]
+
+
+== FUTURE DIRECTIONS:
+
+* A DSL-ish syntax for the operations so that users
+  don't have to deal with J syntax
+* Support for full J syntax using printf-style argument interpolation
+  to supply arrays within expressions
+
+== REQUIREMENTS:
+
+* Ruby 2.0 and patience
+
+== INSTALL:
+
+* sudo gem install jop
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2013 Michael Feathers
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

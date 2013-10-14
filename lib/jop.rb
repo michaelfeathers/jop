@@ -58,9 +58,9 @@ class Drop < Op; REP = '}.'
       else
         ary.reverse.drop(-number).reverse
       end
-      else
-        ary.drop(1)
-     end
+    else
+      ary.drop(1)
+    end
   end
 end
 
@@ -115,7 +115,7 @@ end
 
 class Insert < Op; REP = '/'
   def run ary, interpreter
-    if interpreter.tokens[0] == '+'
+    if interpreter.tokens[0] == Identity::REP
       interpreter.advance(1)
       [ary.reduce(:+)]
     elsif interpreter.tokens[0] == Sign::REP
