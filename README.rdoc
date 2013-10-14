@@ -57,7 +57,7 @@ multi-dimensional arrays. We can create them using the the Shape operator
 
 This expression produces:
 
-[[1, 2], [3, 1],  [2, 3],  [1, 2]]
+  [[1, 2], [3, 1],  [2, 3],  [1, 2]]
 
 3 and 4 are the dimensions of the array we are producing.  The array is filled
 with the values 1 and 2 from the beginning, repeating the sequence as long as
