@@ -10,19 +10,24 @@ class Op
      return text.to_i if text =~ /^\d+/
      -(text[1...text.length]).to_i
   end
+
+  def apply_monad_deep element, &block
+    return yield element unless element.kind_of? Array
+    element.map {|e| apply_monad_deep(e, &block) }
+  end
 end
 
 
 class Ceil < Op; REP = '>.'
   def run ary, interpreter
-    ary.map {|e| e.ceil }
+    apply_monad_deep(ary) {|e| e.ceil }
   end
 end
 
 
 class Complement < Op; REP = '-.'
   def run ary, interpreter
-    ary.map {|e| 1 - e }
+    apply_monad_deep(ary) {|e| 1 - e }
   end
 end
 
@@ -67,7 +72,7 @@ end
 
 class Exp < Op; REP = '^'
   def run ary, interpreter
-    ary.map {|n| Math::exp(n) }
+    apply_monad_deep(ary) {|n| Math::exp(n) }
   end
 end
 
@@ -75,11 +80,6 @@ end
 class Floor < Op; REP = '<.'
   def run ary, interpreter
     apply_monad_deep(ary) {|e| e.floor }
-  end
-
-  def apply_monad_deep element, &block
-    return yield element unless element.kind_of? Array
-    element.map {|e| apply_monad_deep(e, &block) }
   end
 end
 
@@ -100,7 +100,7 @@ end
 
 class Halve < Op; REP = '-:'
   def run ary, interpreter
-    ary.map {|e| e / 2.0 }
+    apply_monad_deep(ary) {|e| e / 2.0 }
   end
 end
 
@@ -113,7 +113,7 @@ end
 
 class Increment < Op; REP = '>:'
   def run ary, interpreter
-    ary.map {|e| e + 1 }
+    apply_monad_deep(ary) {|e| e + 1 }
   end
 end
 
@@ -133,7 +133,7 @@ end
 
 class Reciprocal < Op; REP = '%'
   def run ary, interpreter
-    ary.map {|e| 1 / e.to_f }
+    apply_monad_deep(ary) {|e| 1 / e.to_f }
   end
 end
 
@@ -177,7 +177,7 @@ end
 
 class Sign < Op; REP = '*'
   def run ary, interpreter
-    ary.map {|e| e <=> 0 }
+    apply_monad_deep(ary) {|e| e <=> 0 }
   end
 end
 
@@ -185,6 +185,7 @@ end
 class Square < Op; REP = '*:'
   def run ary, interpreter
     ary.map {|e| e ** 2 }
+    apply_monad_deep(ary) {|e| e ** 2 }
   end
 end
 
