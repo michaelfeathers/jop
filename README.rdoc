@@ -16,7 +16,7 @@ language, I could be happy."  But it's only a matter of time, isn't it?
 * Currently supports a handful of monadic operators and a few dyads
 * Operators can be chained together but there is no implementation
   of 'hook' or 'fork' yet
-* Must operators assume arrays of integers and floats
+* Most operators assume arrays of integers and floats
 * Error handling isn't graceful
 
 == SYNOPSIS:
