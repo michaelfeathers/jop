@@ -207,6 +207,10 @@ describe Jop do
     [1.5].j('<. 2 2 $').should eq([[1,1],[1,1]])
   end
 
+  it "handles array addition" do
+    [1,2,3].j('2 3 4 +').should eq([3,5,7])
+  end
+
   # it "handles empty case on head"
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"

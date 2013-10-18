@@ -11,6 +11,13 @@ class Op
      -(text[1...text.length]).to_i
   end
 
+  def integer_args interpreter
+    interpreter.tokens
+               .take_while {|n| numeric_literal?(n) }
+               .reverse
+               .map(&:to_i)
+  end
+
   def apply_monad_deep element, &block
     return yield element unless element.kind_of? Array
     element.map {|e| apply_monad_deep(e, &block) }
@@ -105,9 +112,12 @@ class Halve < Op; REP = '-:'
 end
 
 
-class Identity < Op; REP = '+'
+class Plus < Op; REP = '+'
   def run ary, interpreter
-    ary
+    args = integer_args(interpreter)
+    interpreter.advance(args.length)
+    return ary if args.empty?
+    return ary.zip(args).map {|x,y| x + y }
   end
 end
 
@@ -120,7 +130,7 @@ end
 
 class Insert < Op; REP = '/'
   def run ary, interpreter
-    if interpreter.tokens[0] == Identity::REP
+    if interpreter.tokens[0] == Plus::REP
       interpreter.advance(1)
       [ary.reduce(:+)]
     elsif interpreter.tokens[0] == Sign::REP
@@ -155,10 +165,7 @@ end
 
 class Shape < Op; REP = '$'
   def run ary, interpreter
-    ranges = interpreter.tokens
-                        .take_while {|n| numeric_literal?(n) }
-                        .reverse
-                        .map(&:to_i)
+    ranges = integer_args(interpreter)
     interpreter.advance(ranges.length)
     fill_matrix(ranges, ary.cycle.each)
   end
