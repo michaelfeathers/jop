@@ -14,7 +14,7 @@ language, I could be happy."  But it's only a matter of time, isn't it?
 == FEATURES/PROBLEMS:
 
 * Currently supports a handful of monadic operators and a few dyads
-* Operators can be chained together but there is no implementation
+* Operators can be chained together but there are no implementations
   of 'hook' or 'fork' yet
 * Most operators assume arrays of integers and floats
 * Error handling isn't graceful
@@ -68,7 +68,7 @@ between you and the Ruby and runtime:
 
   [12, 12, 12, 12, 12].j('42 $')
 
-The Coup de grâce is the insert operator '/'.  You can use it to insert an operator
+The coup de grâce is the insert operator '/'.  You can use it to insert an operator
 between all elements of an array and evaluate it. This is akin to Ruby's inject:
 
   [1, 2, 3].j('+/')
@@ -96,8 +96,8 @@ That give us the total sum:
 
 == FUTURE DIRECTIONS:
 
-* A DSL-ish syntax for the operations so that users
-  don't have to deal with J syntax
+* DSL-ish operations syntax for users who don't want to
+  with J syntax
 * Support for full J syntax using printf-style argument interpolation
   to supply arrays within expressions
 
