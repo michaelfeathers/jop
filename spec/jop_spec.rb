@@ -195,6 +195,10 @@ describe Jop do
     [[0,0,0],[0,0,1],[0,0,0]].j('/:').should eq([0,2,1])
   end
 
+  it "handles invalid input" do
+    [].j('`').should eq([])
+  end
+
   # it "handles empty case on head"
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"
