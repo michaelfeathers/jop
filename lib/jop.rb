@@ -155,10 +155,12 @@ end
 
 class Shape < Op; REP = '$'
   def run ary, interpreter
-    elements = interpreter.tokens.reverse
-    interpreter.advance(elements.length)
-    return generate_matrix(elements, ary) if numeric_literal?(elements[0]) && numeric_literal?(elements[1])
-    []
+    ranges = interpreter.tokens
+                        .take_while {|n| numeric_literal?(n) }
+                        .reverse
+                        .map(&:to_i)
+    interpreter.advance(ranges.length)
+    fill_matrix(ranges, ary.cycle.each)
   end
 
   private
@@ -166,11 +168,6 @@ class Shape < Op; REP = '$'
   def fill_matrix ranges, elements
     return elements.next if ranges.size <= 0
     (0...ranges.first).map { fill_matrix(ranges.drop(1), elements) }
-  end
-
-  def generate_matrix elements, ary
-    ranges = elements.take_while {|n| numeric_literal?(n) }.map(&:to_i)
-    fill_matrix(ranges, ary.cycle.each)
   end
 end
 
