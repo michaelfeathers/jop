@@ -123,7 +123,7 @@ class Insert < Op; REP = '/'
   def run ary, interpreter
     if interpreter.tokens[0] == Plus::REP
       interpreter.advance(1)
-      box ary.reduce {|cum,n| add(cum,n) }
+      box ary.reduce(&method(:add))
     elsif interpreter.tokens[0] == Sign::REP
       interpreter.advance(1)
       box ary.reduce(:*)
