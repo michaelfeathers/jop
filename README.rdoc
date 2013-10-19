@@ -52,20 +52,20 @@ At this point, you might be wondering where we get all of these cool
 multi-dimensional arrays. We can create them using the Shape operator
 '$':
 
-  [3 4].j('1 2 3 $')
+  [1, 2, 3].j('3 4 $')
 
 This expression produces:
 
-  [[1, 2], [3, 1],  [2, 3],  [1, 2]]
+  [[1, 2, 3, 1], [2, 3, 1, 2], [3, 1, 2, 3]]
 
 3 and 4 are the dimensions of the array we are producing.  The array is filled
-with the values 1 and 2 from the beginning and we repeat that sequence of 1s and
-2s as long as there are more elements to fill.
+with the values 1, 2 and 3 from the beginning and we repeat that sequence of 1s, 2s
+and 3s as long as there are more elements to fill.
 
 Arrays can be of any dimension.  It you really want to try this you can but it's
 between you and the Ruby runtime:
 
-  [12, 12, 12, 12, 12].j('42 $')
+  [42].j(12 12 12 12 12 12 12 $')
 
 The coup de grâce is the insert operator '/'.  You can use it to insert an operator
 between each element of an array and evaluate it. This is akin to Ruby's inject:
