@@ -199,10 +199,6 @@ describe Jop do
     [].j('`').should eq([])
   end
 
-  pending "handles monadic shape on an array" do
-    [[0,1],[2,3]].j('$').should eq([2,2])
-  end
-
   it "handles shape with other operators" do
     [1.5].j('<. 2 2 $').should eq([[1,1],[1,1]])
   end
