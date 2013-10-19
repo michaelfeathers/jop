@@ -112,15 +112,6 @@ class Halve < Op; REP = '-:'
 end
 
 
-class Plus < Op; REP = '+'
-  def run ary, interpreter
-    args = integer_args(interpreter)
-    interpreter.advance(args.length)
-    return ary if args.empty?
-    return ary.zip(args).map {|x,y| x + y }
-  end
-end
-
 class Increment < Op; REP = '>:'
   def run ary, interpreter
     apply_monad_deep(ary) {|e| e + 1 }
@@ -137,6 +128,22 @@ class Insert < Op; REP = '/'
       interpreter.advance(1)
       [ary.reduce(:*)]
     end
+  end
+end
+
+
+class NoOp < Op; REP = ''
+  def run ary, interpreter
+  end
+end
+
+
+class Plus < Op; REP = '+'
+  def run ary, interpreter
+    args = integer_args(interpreter)
+    interpreter.advance(args.length)
+    return ary if args.empty?
+    return ary.zip(args).map {|x,y| x + y }
   end
 end
 
@@ -268,10 +275,10 @@ class Jop
   end
 
   def eval_op ary
-    op = @tokens[0]
+    token = @tokens[0]
     advance(1)
-    selected = operators.select {|op_class| op_class.class::REP == op }
-    selected.first.run(ary, self) if selected.size == 1
+    operators.detect(NoOp.new) {|op | op.class::REP == token }
+             .run(ary, self)
   end
 end
 
