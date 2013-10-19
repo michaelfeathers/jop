@@ -123,11 +123,22 @@ class Insert < Op; REP = '/'
   def run ary, interpreter
     if interpreter.tokens[0] == Plus::REP
       interpreter.advance(1)
-      [ary.reduce(:+)]
+      box(ary.reduce {|cum,n| add(cum,n) })
     elsif interpreter.tokens[0] == Sign::REP
       interpreter.advance(1)
-      [ary.reduce(:*)]
+      box(ary.reduce(:*))
     end
+  end
+
+  private
+
+  def add x, y
+    return x.zip(y).map {|x,y| add(x,y)} if [x,y].all? {|e| e.kind_of? Array }
+    x + y
+  end
+
+  def box e
+    e.is_kindof?(Array) ? e : [e]
   end
 end
 
@@ -142,8 +153,7 @@ class Plus < Op; REP = '+'
   def run ary, interpreter
     args = integer_args(interpreter)
     interpreter.advance(args.length)
-    return ary if args.empty?
-    return ary.zip(args).map {|x,y| x + y }
+    args.empty? ? ary : ary.zip(args).map {|x,y| x + y }
   end
 end
 

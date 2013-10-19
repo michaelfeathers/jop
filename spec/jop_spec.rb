@@ -211,7 +211,10 @@ describe Jop do
     [1,2,3].j('2 3 4 +').should eq([3,5,7])
   end
 
-  # it "handles empty case on head"
+  it "does a double insert" do
+    [[1, 2, 3], [4, 5, 6]].j('+/+/').should eq([21])
+  end
+
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"
   # it "shape works in a train"
