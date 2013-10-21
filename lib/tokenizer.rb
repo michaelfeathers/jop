@@ -2,7 +2,7 @@
 
 
 class Tokenizer
-  attr_reader :tokens, :stream
+  attr_reader :tokens
 
   def operator? char
     '~^-%*|<>\\{}+/#$'.include?(char)
@@ -23,8 +23,8 @@ class Tokenizer
           advance(1)
         end
       else
-        if stream =~ /^_?\d+/
-          match_data = /^_?\d+/.match(stream)
+        if @stream =~ /^_?\d+/
+          match_data = /^_?\d+/.match(@stream)
           @tokens << match_data[0]
           advance(match_data[0].length)
         else
@@ -56,6 +56,4 @@ class Tokenizer
   def skip_whitespace
     @stream.lstrip!
   end
-
-
 end
