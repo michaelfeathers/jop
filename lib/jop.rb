@@ -262,7 +262,6 @@ class Jop
   attr_reader :tokens
 
   def initialize command_text
-    @command_text = command_text
     @tokens = Tokenizer.new(command_text).tokens.reverse
   end
 
