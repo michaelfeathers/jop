@@ -27,7 +27,7 @@ the '*:' operator:
 
 From this we get:
 
-  [0, 2, 4]
+  [0, 1, 4]
 
 In typical J fashion, operators work on arrays of any dimension:
 
