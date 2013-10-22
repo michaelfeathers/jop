@@ -6,7 +6,7 @@
 
 Jop is a gem that adds operations of the J programming language to Ruby arrays.
 
-One could legitmately ask why anyone would want to do such a thing.  No one in
+One could legitimately ask why anyone would want to do such a thing.  No one in
 the Ruby community has been screaming "Oh, if only I could rotate N dimensional
 matrices and reduce them with powerful operators from an obscure APL-derived
 language, I could be happy."  But, it's only a matter of time, isn't it?
