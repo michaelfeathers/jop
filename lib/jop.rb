@@ -223,17 +223,11 @@ end
 
 class Take < Op; REP = '{.'
   def run ary, interpreter
-    if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
-      number = to_numeric(interpreter.tokens[0])
-      interpreter.advance(1)
-      if number >= 0
-        padded_take(ary,number)
-      else
-        padded_take(ary.reverse,-number).reverse
-      end
-    else
-      ary.take(1)
-    end
+    return ary.take(1) if interpreter.tokens.empty?
+    return ary.take(1) if not numeric_literal?(interpreter.tokens[0])
+    count = to_numeric(interpreter.tokens[0])
+    interpreter.advance(1)
+    count > 0 ? padded_take(ary, count) : padded_take(ary.reverse, -count).reverse
   end
 
   private
