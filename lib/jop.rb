@@ -59,21 +59,22 @@ class Double < Op; REP = '+:'
   end
 end
 
-
 class Drop < Op; REP = '}.'
   def run ary, interpreter
-    if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
-      number = to_numeric(interpreter.tokens[0])
-      interpreter.advance(1)
-      if number >= 0
-        ary.drop(number)
-      else
-        ary.reverse.drop(-number).reverse
-      end
-    else
-      ary.drop(1)
-    end
+    return ary.drop(1) if interpreter.tokens.empty?
+    return ary.drop(1) if not numeric_literal?(interpreter.tokens[0])
+    count = to_numeric(interpreter.tokens[0])
+    interpreter.advance(1)
+    count > 0 ? padded_drop(ary, count) : padded_drop(ary.reverse, -count).reverse
   end
+
+  private
+  def padded_drop ary, count
+    pad_amount = count > ary.size ? count - ary.size : 0
+    ary.drop(count) + [0] * pad_amount
+  end
+
+
 end
 
 
