@@ -39,6 +39,14 @@ describe Jop do
     [1,2,3,4].j('3 {.').should eq([1,2,3])
   end
 
+  it "overtakes" do
+    [1,2,3].j('5 {.').should eq([1,2,3,0,0])
+  end
+
+  it "undertakes" do
+    [1,2,3].j('_5 {.').should eq([0,0,1,2,3])
+  end
+
   it "takes negative elements" do
     [1,2,3].j('_2 {.').should eq([2,3])
   end
