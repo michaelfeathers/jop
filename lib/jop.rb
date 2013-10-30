@@ -65,7 +65,7 @@ class Drop < Op; REP = '}.'
     return ary.drop(1) if not numeric_literal?(interpreter.tokens[0])
     count = to_numeric(interpreter.tokens[0])
     interpreter.advance(1)
-    count > 0 ? ary.drop(count) : ary.reverse.drop(-count).reverse
+    count >= 0 ? ary.drop(count) : ary.reverse.drop(-count).reverse
   end
 
 end
@@ -221,12 +221,12 @@ class Take < Op; REP = '{.'
     return ary.take(1) if not numeric_literal?(interpreter.tokens[0])
     count = to_numeric(interpreter.tokens[0])
     interpreter.advance(1)
-    count > 0 ? padded_take(ary, count) : padded_take(ary.reverse, -count).reverse
+    count >= 0 ? padded_take(ary, count) : padded_take(ary.reverse, -count).reverse
   end
 
   private
   def padded_take ary, count
-    pad_amount = count > ary.size ? count - ary.size : 0
+    pad_amount = [0, count - ary.size].max
     ary.take(count) + [0] * pad_amount
   end
 end
