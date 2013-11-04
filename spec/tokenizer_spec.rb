@@ -66,4 +66,8 @@ describe Tokenizer do
     first_of('!').should eq('!')
   end
 
+  it 'recognizes random' do
+    first_of('?').should eq('?')
+  end
+
 end

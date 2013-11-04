@@ -170,6 +170,13 @@ class Reciprocal < Op; REP = '%'
 end
 
 
+class RandomOp < Op; REP = '?'
+  def run ary, interpreter
+    apply_monad_deep(ary) {|e| rand }
+  end
+end
+
+
 class ReverseRotate < Op; REP = '|.'
   def run ary, interpreter
     if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
