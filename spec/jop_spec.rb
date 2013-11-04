@@ -219,6 +219,18 @@ describe Jop do
     [[1, 2, 3], [4, 5, 6]].j('+/+/').should eq([21])
   end
 
+  it "does a selection" do
+    [0,1,2].j('0 }').should eq([0])
+  end
+
+  it "selects more than one element" do
+    [0,1,2].j('0 2 }').should eq([0, 2])
+  end
+
+  pending "selects using a negative index" do
+    [0,1,2].j('_1 }').should eq([0, 2])
+  end
+
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"
   # it "shape works in a train"

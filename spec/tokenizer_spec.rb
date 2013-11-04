@@ -58,4 +58,8 @@ describe Tokenizer do
     first_of('/').should eq('/')
   end
 
+  it 'recognizes selection' do
+    first_of('}').should eq('}')
+  end
+
 end

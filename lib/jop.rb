@@ -178,6 +178,15 @@ class ReverseRotate < Op; REP = '|.'
 end
 
 
+class Select < Op; REP = '}'
+  def run ary, interpreter
+    indices = integer_args(interpreter)
+    interpreter.advance(indices.length)
+    indices.map {|i| ary[i] }
+  end
+end
+
+
 class Shape < Op; REP = '$'
   def run ary, interpreter
     ranges = integer_args(interpreter)
@@ -288,7 +297,7 @@ class Jop
   def eval_op ary
     token = @tokens[0]
     advance(1)
-    operators.detect(NoOp.new) {|op | op.class::REP == token }
+    operators.detect(NoOp.new) {|op| op.class::REP == token }
              .run(ary, self)
   end
 end
