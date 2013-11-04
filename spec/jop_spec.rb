@@ -227,8 +227,8 @@ describe Jop do
     [0,1,2].j('0 2 }').should eq([0, 2])
   end
 
-  pending "selects using a negative index" do
-    [0,1,2].j('_1 }').should eq([0, 2])
+  it "selects using a negative index" do
+    [0,1,2].j('_1 }').should eq([2])
   end
 
   # it "handles empty case on head"

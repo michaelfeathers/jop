@@ -15,7 +15,7 @@ class Op
     interpreter.tokens
                .take_while {|n| numeric_literal?(n) }
                .reverse
-               .map(&:to_i)
+               .map {|s| to_numeric(s) }
   end
 
   def apply_monad_deep element, &block
@@ -181,6 +181,7 @@ end
 class Select < Op; REP = '}'
   def run ary, interpreter
     indices = integer_args(interpreter)
+    puts "<#{indices}>"
     interpreter.advance(indices.length)
     indices.map {|i| ary[i] }
   end
