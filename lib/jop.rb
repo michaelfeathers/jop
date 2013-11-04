@@ -78,6 +78,13 @@ class Exp < Op; REP = '^'
 end
 
 
+class Factorial < Op; REP = '!'
+  def run ary, interpreter
+    apply_monad_deep(ary) {|e| (1..e).reduce(:*) || 1 }
+  end
+end
+
+
 class Floor < Op; REP = '<.'
   def run ary, interpreter
     apply_monad_deep(ary) {|e| e.floor }
@@ -181,7 +188,6 @@ end
 class Select < Op; REP = '}'
   def run ary, interpreter
     indices = integer_args(interpreter)
-    puts "<#{indices}>"
     interpreter.advance(indices.length)
     indices.map {|i| ary[i] }
   end

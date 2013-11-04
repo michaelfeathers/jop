@@ -5,7 +5,7 @@ class Tokenizer
   attr_reader :tokens
 
   def operator? char
-    '~^-%*|<>\\{}+/#$'.include?(char)
+    '~^-%*|<>\\{}+/#$!'.include?(char)
   end
 
   def initialize text

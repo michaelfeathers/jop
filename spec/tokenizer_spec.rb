@@ -62,4 +62,8 @@ describe Tokenizer do
     first_of('}').should eq('}')
   end
 
+  it 'recognizes factorial' do
+    first_of('!').should eq('!')
+  end
+
 end

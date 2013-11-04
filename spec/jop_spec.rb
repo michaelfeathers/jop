@@ -231,6 +231,11 @@ describe Jop do
     [0,1,2].j('_1 }').should eq([2])
   end
 
+  it "computes factorial" do
+    [0,1,2,3,4].j('!').should eq([1,1,2,6,24])
+  end
+
+  # it "handles non-integer factorial"
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"
   # it "shape works in a train"
