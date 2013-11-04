@@ -225,9 +225,13 @@ class Take < Op; REP = '{.'
   end
 
   private
-  def padded_take ary, count
-    pad_amount = [0, count - ary.size].max
-    ary.take(count) + [0] * pad_amount
+  def padded_take ary, n
+    pad_out(ary, n).take(n)
+  end
+
+  def pad_out ary, n
+    pad_length = [0, n - ary.length].max
+    ary + [0] * pad_length
   end
 end
 
