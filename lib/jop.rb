@@ -177,7 +177,7 @@ class RandomOp < Op; REP = '?'
 
   @@generator = Random::DEFAULT
 
-  def RandomOp.generator=(new_value)
+  def RandomOp.generator= new_value
     @@generator = new_value
   end
 end

@@ -235,7 +235,7 @@ describe Jop do
     [0,1,2,3,4].j('!').should eq([1,1,2,6,24])
   end
 
-  it "computes random in [0,1)" do
+  it "computes random in [0.0, 1.0)" do
     RandomOp.generator = Class.new do; def rand; 0.5; end; end.new
     [0].j('?')[0].should be_within(0.001).of(0.5)
   end
