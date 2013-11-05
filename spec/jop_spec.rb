@@ -236,12 +236,11 @@ describe Jop do
   end
 
   it "computes random in [0,1)" do
-    n = 5000
-    random = ([0] * n).j('?').reduce(:+) / n
-    random.should be < 1.0
-    random.should be > 0.0
+    RandomOp.generator = Class.new do; def rand; 0.5; end; end.new
+    [0].j('?')[0].should be_within(0.001).of(0.5)
   end
 
+  # it "handles random in range"
   # it "handles non-integer factorial"
   # it "handles empty case on head"
   # it "shape works with arbirtary number of dimensions"

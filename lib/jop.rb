@@ -172,7 +172,13 @@ end
 
 class RandomOp < Op; REP = '?'
   def run ary, interpreter
-    apply_monad_deep(ary) {|e| rand }
+    apply_monad_deep(ary) {|e| @@generator.rand }
+  end
+
+  @@generator = Random::DEFAULT
+
+  def RandomOp.generator=(new_value)
+    @@generator = new_value
   end
 end
 
