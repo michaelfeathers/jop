@@ -62,7 +62,7 @@ end
 class Drop < Op; REP = '}.'
   def run ary, interpreter
     return ary.drop(1) if interpreter.tokens.empty?
-    return ary.drop(1) if not numeric_literal?(interpreter.tokens[0])
+    return ary.drop(1) unless numeric_literal?(interpreter.tokens[0])
     count = to_numeric(interpreter.tokens[0])
     interpreter.advance(1)
     count >= 0 ? ary.drop(count) : ary.reverse.drop(-count).reverse
@@ -246,7 +246,7 @@ end
 class Take < Op; REP = '{.'
   def run ary, interpreter
     return ary.take(1) if interpreter.tokens.empty?
-    return ary.take(1) if not numeric_literal?(interpreter.tokens[0])
+    return ary.take(1) unless numeric_literal?(interpreter.tokens[0])
     count = to_numeric(interpreter.tokens[0])
     interpreter.advance(1)
     count >= 0 ? padded_take(ary, count) : padded_take(ary.reverse, -count).reverse
@@ -306,7 +306,7 @@ class Jop
   private
 
   def operators
-    if not @operators
+    unless @operators
       @operators = []
       ObjectSpace.each_object(::Class) {|klass| @operators << klass.new if klass < Op }
     end
