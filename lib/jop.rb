@@ -185,15 +185,14 @@ end
 
 class ReverseRotate < Op; REP = '|.'
   def run ary, interpreter
-    if interpreter.tokens.size > 0 && numeric_literal?(interpreter.tokens[0])
-      number = to_numeric(interpreter.tokens[0])
-      interpreter.advance(1)
-      segment_length = number % ary.length
-      segment = ary.take(segment_length)
-      ary.drop(segment_length) + segment
-    else
-      ary.reverse
-    end
+    args = integer_args(interpreter)
+    return ary.reverse if args.empty?
+    return [] unless args.size == 1
+    steps = args.first
+    interpreter.advance(1)
+    segment_length = steps % ary.length
+    segment = ary.take(segment_length)
+    ary.drop(segment_length) + segment
   end
 end
 
