@@ -80,7 +80,7 @@ end
 
 class Factorial < Op; REP = '!'
   def run ary, interpreter
-    apply_monad_deep(ary) {|e| (1..e).reduce(:*) || 1 }
+    apply_monad_deep(ary) {|n| (1..n).reduce(:*) || 1 }
   end
 end
 
@@ -246,13 +246,14 @@ end
 class Take < Op; REP = '{.'
   def run ary, interpreter
     return ary.take(1) if interpreter.tokens.empty?
-    return ary.take(1) if not numeric_literal?(interpreter.tokens[0])
+    return ary.take(1) unless numeric_literal?(interpreter.tokens[0])
     count = to_numeric(interpreter.tokens[0])
     interpreter.advance(1)
     count >= 0 ? padded_take(ary, count) : padded_take(ary.reverse, -count).reverse
   end
 
   private
+
   def padded_take ary, n
     pad_out(ary, n).take(n)
   end
