@@ -240,6 +240,8 @@ describe Jop do
     [0].j('?')[0].should be_within(0.001).of(0.5)
   end
 
+  it "overtakes in more than one dimension"
+
   # it "handles random in range"
   # it "handles non-integer factorial"
   # it "handles empty case on head"
