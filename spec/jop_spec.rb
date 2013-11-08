@@ -240,6 +240,20 @@ describe Jop do
     [0].j('?')[0].should be_within(0.001).of(0.5)
   end
 
+  it "computes shapeOf an empty array" do
+    [].j('$').should eq([0])
+  end
+
+  it "computes shape of a rank 1 array" do
+    [0, 0, 0].j('$').should eq([3])
+  end
+
+  it "computes shape of a rank 2 array" do
+    [[0, 0], [0,0], [0,0]].j('$').should eq([3,2])
+  end
+
+
+
   it "overtakes in more than one dimension"
 
   # it "handles random in range"

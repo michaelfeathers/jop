@@ -1,5 +1,4 @@
-
-require 'tokenizer'
+ require 'tokenizer'
 
 class Op
   def numeric_literal? text
@@ -209,11 +208,21 @@ end
 class Shape < Op; REP = '$'
   def run ary, interpreter
     ranges = integer_args(interpreter)
+    return shape_of(ary) if ranges.empty?
     interpreter.advance(ranges.length)
     fill_matrix(ranges, ary.cycle.each)
   end
 
   private
+
+  def shape_of ary
+    shape = []
+    while ary.kind_of?(Array)
+      shape << ary.size
+      ary = ary.first
+    end
+    shape
+  end
 
   def fill_matrix ranges, elements
     return elements.next if ranges.size <= 0
