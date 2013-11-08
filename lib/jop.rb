@@ -210,19 +210,23 @@ class Shape < Op; REP = '$'
     ranges = integer_args(interpreter)
     return shape_of(ary) if ranges.empty?
     interpreter.advance(ranges.length)
-    fill_matrix(ranges, ary.cycle.each)
+    construct(ranges, ary)
   end
-
-  private
 
   def shape_of ary
     shape = []
-    while ary.kind_of?(Array)
+    while ary.kind_of? Array
       shape << ary.size
       ary = ary.first
     end
     shape
   end
+
+  def construct ranges, elements
+    fill_matrix(ranges, elements.cycle.each)
+  end
+
+  private
 
   def fill_matrix ranges, elements
     return elements.next if ranges.size <= 0
@@ -269,7 +273,14 @@ class Take < Op; REP = '{.'
 
   def pad_out ary, n
     pad_length = [0, n - ary.length].max
-    ary + [0] * pad_length
+    ary + pad(ary) * pad_length
+  end
+
+  def pad ary
+    return [0] unless ary.first.kind_of? Array
+    op = Shape.new
+    shape = op.shape_of(ary[0])
+    [op.construct(shape, [0])]
   end
 end
 
