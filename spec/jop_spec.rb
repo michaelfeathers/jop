@@ -43,6 +43,10 @@ describe Jop do
     [1,2,3].j('5 {.').should eq([1,2,3,0,0])
   end
 
+  it "overtakes on a rank 2 array" do
+    [[1,1],[1,1]].j('4 {.').should eq([[1,1],[1,1],[0,0],[0,0]])
+  end
+
   it "undertakes" do
     [1,2,3].j('_5 {.').should eq([0,0,1,2,3])
   end
@@ -240,7 +244,7 @@ describe Jop do
     [0].j('?')[0].should be_within(0.001).of(0.5)
   end
 
-  it "computes shapeOf an empty array" do
+  it "computes shape of an empty array" do
     [].j('$').should eq([0])
   end
 
@@ -251,10 +255,6 @@ describe Jop do
   it "computes shape of a rank 2 array" do
     [[0, 0], [0,0], [0,0]].j('$').should eq([3,2])
   end
-
-
-
-  it "overtakes in more than one dimension"
 
   # it "handles random in range"
   # it "handles non-integer factorial"
