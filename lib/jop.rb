@@ -238,7 +238,7 @@ end
 
 class Tail < Op; REP = '{:'
   def run ary, interpreter
-      ary.drop(ary.count-1)
+    ary.drop(ary.count-1)
   end
 end
 
