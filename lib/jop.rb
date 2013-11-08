@@ -297,11 +297,10 @@ class Jop
   end
 
   def eval_on ary
-    result = ary
-    while not @tokens.empty?
-      result = eval_op(result)
+    until @tokens.empty?
+      ary = eval_op(ary)
     end
-    result
+    ary
   end
 
   private
