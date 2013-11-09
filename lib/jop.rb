@@ -189,6 +189,7 @@ class ReverseRotate < Op; REP = '|.'
     return [] unless args.size == 1
     steps = args.first
     interpreter.advance(1)
+
     segment_length = steps % ary.length
     segment = ary.take(segment_length)
     ary.drop(segment_length) + segment
