@@ -205,6 +205,13 @@ class Select < Op; REP = '}'
   end
 end
 
+class Sequence < Op; REP = 'i.'
+  def run ary, interpreter
+    return [] if ary.empty?
+    (0...ary.first).to_a
+  end
+end
+
 
 class Shape < Op; REP = '$'
   def run ary, interpreter

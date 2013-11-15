@@ -256,6 +256,10 @@ describe Jop do
     [[0, 0], [0,0], [0,0]].j('$').should eq([3,2])
   end
 
+  it "computes an integer sequence" do
+    [4].j('i.').should eq([0,1,2,3])
+  end
+
   # it "handles random in range"
   # it "handles non-integer factorial"
   # it "handles empty case on head"

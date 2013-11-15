@@ -70,4 +70,8 @@ describe Tokenizer do
     first_of('?').should eq('?')
   end
 
+  it 'recognizes sequence' do
+    first_of('i.').should eq('i.')
+  end
+
 end
