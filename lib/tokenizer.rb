@@ -4,38 +4,47 @@
 class Tokenizer
   attr_reader :tokens
 
-  def operator? char
-    '~^-%*|<>\\{}+/#$!?i'.include?(char)
-  end
-
   def initialize text
     @stream = text
     @tokens = []
 
-    skip_whitespace
     while tokenizing?
-      if operator?(current_char)
-        if '.:'.include?(next_char)
-          @tokens << current_char + next_char
-          advance(2)
-        else
-          @tokens << current_char
-          advance(1)
-        end
-      else
-        if @stream =~ /^_?\d+/
-          match_data = /^_?\d+/.match(@stream)
-          @tokens << match_data[0]
-          advance(match_data[0].length)
-        else
-          break
-        end
-      end
       skip_whitespace
+      if operator?
+        operator_token
+      elsif numeric?
+        numeric_token
+      else
+        break
+      end
     end
   end
 
   private
+
+  def operator_token
+    if not '.:'.include?(next_char)
+      @tokens << current_char
+      advance(1)
+      return
+    end
+    @tokens << current_char + next_char
+    advance(2)
+  end
+
+  def numeric_token
+    match_data = /^_?\d+/.match(@stream)
+    @tokens << match_data[0]
+    advance(match_data[0].length)
+  end
+
+  def operator?
+    '~^-%*|<>\\{}+/#$!?i'.include?(current_char)
+  end
+
+  def numeric?
+     @stream =~ /^_?\d+/
+  end
 
   def tokenizing?
     @stream.length > 0
