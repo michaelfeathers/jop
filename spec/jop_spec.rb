@@ -260,6 +260,10 @@ describe Jop do
     [4].j('i.').should eq([0,1,2,3])
   end
 
+  it "computes a matrix sequence" do
+    [2,3].j('i.').should eq([[0,1,2],[3,4,5]])
+  end
+
   # it "handles random in range"
   # it "handles non-integer factorial"
   # it "handles empty case on head"

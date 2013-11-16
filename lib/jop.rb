@@ -205,10 +205,11 @@ class Select < Op; REP = '}'
   end
 end
 
+
 class Sequence < Op; REP = 'i.'
   def run ary, interpreter
     return [] if ary.empty?
-    (0...ary.first).to_a
+    Shape.new.construct(ary, (0..Float::INFINITY).lazy)
   end
 end
 
