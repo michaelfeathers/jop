@@ -326,9 +326,7 @@ class Jop
   end
 
   def eval_on ary
-    until @tokens.empty?
-      ary = eval_op(ary)
-    end
+    until @tokens.empty?; ary = eval_op(ary); end
     ary
   end
 
