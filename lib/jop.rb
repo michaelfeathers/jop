@@ -157,7 +157,8 @@ class Plus < Op; REP = '+'
   def run ary, interpreter
     args = integer_args(interpreter)
     interpreter.advance(args.length)
-    args.empty? ? ary : ary.zip(args).map {|x,y| x + y }
+    return ary if args.empty?
+    ary.zip(args).map {|x,y| x + y }
   end
 end
 
@@ -223,12 +224,7 @@ class Shape < Op; REP = '$'
   end
 
   def shape_of ary
-    shape = []
-    while ary.kind_of? Array
-      shape << ary.size
-      ary = ary.first
-    end
-    shape
+    descent(ary).map(&:size)
   end
 
   def construct ranges, elements
@@ -236,6 +232,15 @@ class Shape < Op; REP = '$'
   end
 
   private
+
+  def descent ary
+    layers = []
+    while ary.kind_of? Array
+      layers << ary
+      ary = ary.first
+    end
+    layers
+  end
 
   def fill_matrix ranges, elements
     return elements.next if ranges.size <= 0
