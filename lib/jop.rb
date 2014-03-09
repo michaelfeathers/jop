@@ -1,4 +1,5 @@
- require 'tokenizer'
+require 'tokenizer'
+require 'joparray'
 
 class Op
   def numeric_literal? text
@@ -354,7 +355,8 @@ class Jop
 end
 
 class Array
-  def j command_text
+  def j command_text = ""
+    return JopArray.new(self) if command_text == ""
     Jop.new(command_text).eval_on(self)
   end
 end

@@ -3,7 +3,7 @@
 require 'jop'
 
 describe Jop do
-  it "does identity" do
+  pending "does identity" do
     [].j('').should eq([])
   end
 
@@ -262,6 +262,22 @@ describe Jop do
 
   it "computes a matrix sequence" do
     [2,3].j('i.').should eq([[0,1,2],[3,4,5]])
+  end
+
+  it "sums literately" do
+    [0,1,2].j.sum.should eq([3])
+  end
+
+  it "does compound sum" do
+    [0,1,2].j.reduce('+').should eq([3])
+  end
+
+  it "does literate factorial" do
+    [2,3,4].j.factorial.should eq([2,6,24])
+  end
+
+  it "does literate rotate right" do
+    [0,1,2].j.rotate([1]).should eq([1,2,0])
   end
 
   # it "handles random in range"
