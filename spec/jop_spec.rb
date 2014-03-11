@@ -3,10 +3,6 @@
 require 'jop'
 
 describe Jop do
-  pending "does identity" do
-    [].j('').should eq([])
-  end
-
   it "sums" do
     [3,2,1].j('+/').should eq([6])
   end
