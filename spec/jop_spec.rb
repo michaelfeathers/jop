@@ -276,6 +276,12 @@ describe Jop do
     [0,1,2].j.rotate([1]).should eq([1,2,0])
   end
 
+  it "does literate select" do
+    # is this inversion of argument order correct?
+    [0,1,2,3].j.select([0,2]).should eq([0,2])
+  end
+
+
   # it "handles random in range"
   # it "handles non-integer factorial"
   # it "handles empty case on head"

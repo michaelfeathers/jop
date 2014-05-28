@@ -21,4 +21,14 @@ class JopArray
     @ary.j(op_string + '/')
   end
 
+  def select ary
+    @ary.j("#{as_s(ary)}" + '}')
+  end
+
+  private
+
+  def as_s ary
+    ary.map(&:to_s).join(' ')
+  end
+
 end
